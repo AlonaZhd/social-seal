@@ -1,0 +1,59 @@
+/*=============== VARIABLES ===============*/
+:root {
+  /*========== Colors ==========*/
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark: #1d1d25;
+  --color-bg-dark: #292f3e;
+  --color-btn-primary: #3482ff;
+  --color-btn-secondary: #f79d5a;
+  --color-title: #0b0b0b;
+  --color-big-title: #2a2a2a;
+  --color-title-accent: #f89e52;
+  --color-big-title-accent: #ff7012;
+  --color-text: #727272;
+  --color-text-dark: #191919;
+  --color-text-light: #bbbbbb;
+  --color-text-card: #6b645d;
+  --color-text-accent: #959eb6;
+  --color-text-menu: #252541;
+  --color-text-menu-light: #c5c7cb;
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+}
+
+/*========== Breakpoint ==========*/
+/* Large(Desktop): 1025px - 1279px */
+/* Medium(Laptop): 769px - 1024px */
+/* Small(Tablet): 481px - 768px */
+/* Extra small(Mobile): 0px (320px) - 480px */
+/*=============== UTILS ===============*/
+/*=============== VARIABLES ===============*/
+:root {
+  /*========== Colors ==========*/
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark: #1d1d25;
+  --color-bg-dark: #292f3e;
+  --color-btn-primary: #3482ff;
+  --color-btn-secondary: #f79d5a;
+  --color-title: #0b0b0b;
+  --color-big-title: #2a2a2a;
+  --color-title-accent: #f89e52;
+  --color-big-title-accent: #ff7012;
+  --color-text: #727272;
+  --color-text-dark: #191919;
+  --color-text-light: #bbbbbb;
+  --color-text-card: #6b645d;
+  --color-text-accent: #959eb6;
+  --color-text-menu: #252541;
+  --color-text-menu-light: #c5c7cb;
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+}
+
+/*========== Breakpoint ==========*/
+/* Large(Desktop): 1025px - 1279px */
+/* Medium(Laptop): 769px - 1024px */
+/* Small(Tablet): 481px - 768px */
+/* Extra small(Mobile): 0px (320px) - 480px *//*# sourceMappingURL=main.css.map */
