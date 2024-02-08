@@ -1,0 +1,25 @@
+/*=============== HEADER ===============*/
+
+.header {
+    width: 100%;
+    padding: 7px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &__menu {
+        gap: 5.2rem;
+    }
+
+    &__nav {
+        gap: 3.2rem;
+
+        .nav-link {
+            padding: 3.5rem 0;
+            font-size: 1.6rem;
+        }
+    }
+
+    // &__button {
+    // }
+}

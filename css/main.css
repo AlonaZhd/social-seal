@@ -5,6 +5,37 @@
   --color-white: #ffffff;
   --color-dark: #1d1d25;
   --color-bg-dark: #292f3e;
+  --color-border: #e5e7ec;
+  --color-btn-primary: #3482ff;
+  --color-btn-secondary: #f79d5a;
+  --color-title: #0b0b0b;
+  --color-big-title: #2a2a2a;
+  --color-title-accent: #f89e52;
+  --color-big-title-accent: #ff7012;
+  --color-text: #727272;
+  --color-text-dark: #191919;
+  --color-text-light: #bbbbbb;
+  --color-text-card: #6b645d;
+  --color-text-accent: #959eb6;
+  --color-text-menu: #252541;
+  --color-text-menu-light: #c5c7cb;
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+}
+
+/*========== Breakpoint ==========*/
+/* Large(Desktop): 1025px - 1279px */
+/* Medium(Laptop): 769px - 1024px */
+/* Small(Tablet): 481px - 768px */
+/* Extra small(Mobile): 0px (320px) - 480px */
+/*=============== VARIABLES ===============*/
+:root {
+  /*========== Colors ==========*/
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark: #1d1d25;
+  --color-bg-dark: #292f3e;
+  --color-border: #e5e7ec;
   --color-btn-primary: #3482ff;
   --color-btn-secondary: #f79d5a;
   --color-title: #0b0b0b;
@@ -28,32 +59,217 @@
 /* Small(Tablet): 481px - 768px */
 /* Extra small(Mobile): 0px (320px) - 480px */
 /*=============== UTILS ===============*/
-/*=============== VARIABLES ===============*/
-:root {
-  /*========== Colors ==========*/
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-dark: #1d1d25;
-  --color-bg-dark: #292f3e;
-  --color-btn-primary: #3482ff;
-  --color-btn-secondary: #f79d5a;
-  --color-title: #0b0b0b;
-  --color-big-title: #2a2a2a;
-  --color-title-accent: #f89e52;
-  --color-big-title-accent: #ff7012;
-  --color-text: #727272;
-  --color-text-dark: #191919;
-  --color-text-light: #bbbbbb;
-  --color-text-card: #6b645d;
-  --color-text-accent: #959eb6;
-  --color-text-menu: #252541;
-  --color-text-menu-light: #c5c7cb;
-  /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
-/*========== Breakpoint ==========*/
-/* Large(Desktop): 1025px - 1279px */
-/* Medium(Laptop): 769px - 1024px */
-/* Small(Tablet): 481px - 768px */
-/* Extra small(Mobile): 0px (320px) - 480px *//*# sourceMappingURL=main.css.map */
+.line {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 8px;
+  background-color: var(--color-border);
+}
+
+.col {
+  padding: 0;
+}
+
+/*=============== BASE ===============*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-title);
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  width: 100%;
+  padding: 7px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header__menu {
+  gap: 5.2rem;
+}
+.header__nav {
+  gap: 3.2rem;
+}
+.header__nav .nav-link {
+  padding: 3.5rem 0;
+  font-size: 1.6rem;
+}
+
+/*=============== LINK ===============*/
+.nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 9px;
+}
+.nav-item:hover {
+  color: var(--color-title-accent);
+}
+.nav-item:hover .nav-link__arrow {
+  fill: var(--color-title-accent);
+}
+
+.nav-link {
+  color: var(--color-text-menu);
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.nav-link__arrow {
+  fill: var(--color-text-menu);
+  width: 14px;
+  height: 16px;
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
+}
+
+/*=============== BUTTON ===============*/
+.button {
+  padding: 1.9rem 3.3rem;
+  border-radius: 2rem;
+  color: var(--color-white);
+  font-size: 1.6rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: none;
+}
+.button:hover {
+  opacity: 0.5;
+}
+.button--primary {
+  color: var(--color-btn-primary);
+  border: 1px solid var(--color-btn-primary);
+  background-color: var(--color-white);
+}
+.button--secondary {
+  background-color: var(--color-btn-secondary);
+}
+
+/*=============== DROPDOWN ===============*/
+.dropdown-toggle::after {
+  border: none;
+}
+.dropdown-toggle.show {
+  color: var(--color-title-accent);
+}
+.dropdown-toggle.show .nav-link__arrow {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  fill: var(--color-title-accent);
+}
+.dropdown__menu {
+  width: 100vw;
+  padding: 4.3rem 0 5.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-white);
+  -webkit-box-shadow: 0px 14px 44px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 14px 44px 0px rgba(0, 0, 0, 0.05);
+}
+.dropdown-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.dropdown-container--row {
+  width: 100%;
+  gap: 2.8rem;
+}
+.dropdown__item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+.dropdown__title {
+  color: var(--color-text-menu);
+  font-size: 2.8rem;
+}
+.dropdown__content {
+  color: var(--color-text);
+  font-size: 1.8rem;
+  line-height: 180%;
+}
+.dropdown-list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.dropdown-list__item {
+  gap: 1.2rem;
+}
+.dropdown-list__icon {
+  width: 20px;
+  height: 20px;
+}
+.dropdown-list__text {
+  color: var(--color-text);
+  font-size: 1.9rem;
+  line-height: 166%;
+  cursor: pointer;
+}
+.dropdown-list__text:hover {
+  color: var(--color-title-accent);
+}/*# sourceMappingURL=main.css.map */
