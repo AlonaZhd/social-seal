@@ -5,6 +5,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0;
+    // border: 1px solid black;
 }
 
 .line {
@@ -14,6 +15,28 @@
     background-color: var(--color-border);
 }
 
-.col {
+.col,
+.col-2,
+.col-3,
+.col-4,
+.col-6 {
     padding: 0;
+}
+
+.content__container {
+    gap: 3.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 6rem;
+    line-height: 110%;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    line-height: 120%;
+    text-transform: capitalize;
 }

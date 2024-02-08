@@ -1,0 +1,14 @@
+/*=============== ICONS ===============*/
+
+.icon {
+    width: 32px;
+    height: 32px;
+
+    &--light {
+        fill: var(--color-icon-ligth);
+    }
+
+    &-container {
+        gap: 1.5rem;
+    }
+}

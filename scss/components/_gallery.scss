@@ -1,0 +1,18 @@
+/*=============== GALLERY ===============*/
+
+.gallery {
+    display: grid;
+    justify-content: end;
+
+    &-image {
+        border-radius: 1.6rem;
+
+        &--large {
+            width: 300px;
+            height: 100%;
+            background-color: var(--color-border);
+            grid-column: 2 / 3;
+            grid-row: 1 / span 2;
+        }
+    }
+}

@@ -6,6 +6,7 @@
   --color-dark: #1d1d25;
   --color-bg-dark: #292f3e;
   --color-border: #e5e7ec;
+  --color-icon-ligth: #acb5bc;
   --color-btn-primary: #3482ff;
   --color-btn-secondary: #f79d5a;
   --color-title: #0b0b0b;
@@ -36,6 +37,7 @@
   --color-dark: #1d1d25;
   --color-bg-dark: #292f3e;
   --color-border: #e5e7ec;
+  --color-icon-ligth: #acb5bc;
   --color-btn-primary: #3482ff;
   --color-btn-secondary: #f79d5a;
   --color-title: #0b0b0b;
@@ -73,8 +75,35 @@
   background-color: var(--color-border);
 }
 
-.col {
+.col,
+.col-2,
+.col-3,
+.col-4,
+.col-6 {
   padding: 0;
+}
+
+.content__container {
+  gap: 3.2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.title {
+  font-size: 6rem;
+  line-height: 110%;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  line-height: 120%;
+  text-transform: capitalize;
 }
 
 /*=============== BASE ===============*/
@@ -151,6 +180,39 @@ img {
   font-size: 1.6rem;
 }
 
+/*=============== HERO ===============*/
+.hero {
+  padding-top: 120px;
+}
+.hero .subtitle {
+  padding: 1.2rem 2.4rem;
+  border-radius: 3.2rem;
+  color: var(--color-white);
+  background-color: var(--color-btn-secondary);
+  font-size: 1.6rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.hero .button__container {
+  padding-top: 64px;
+}
+.hero-gallery {
+  gap: 1.6rem;
+  grid-template-columns: auto auto;
+}
+
+/*=============== ICONS ===============*/
+.icon {
+  width: 32px;
+  height: 32px;
+}
+.icon--light {
+  fill: var(--color-icon-ligth);
+}
+.icon-container {
+  gap: 1.5rem;
+}
+
 /*=============== LINK ===============*/
 .nav-item {
   display: -webkit-box;
@@ -194,13 +256,27 @@ img {
 .button:hover {
   opacity: 0.5;
 }
-.button--primary {
+.button__primary {
+  color: var(--color-white);
+  background-color: var(--color-btn-primary);
+}
+.button__primary--outline {
   color: var(--color-btn-primary);
   border: 1px solid var(--color-btn-primary);
   background-color: var(--color-white);
 }
-.button--secondary {
+.button__primary--link {
+  color: var(--color-btn-primary);
+  border: 1px solid var(--color-white);
+}
+.button__primary--link:hover {
+  border: 1px solid var(--color-btn-primary);
+}
+.button__secondary {
   background-color: var(--color-btn-secondary);
+}
+.button__container {
+  gap: 1.2rem;
 }
 
 /*=============== DROPDOWN ===============*/
@@ -272,4 +348,22 @@ img {
 }
 .dropdown-list__text:hover {
   color: var(--color-title-accent);
+}
+
+/*=============== GALLERY ===============*/
+.gallery {
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.gallery-image {
+  border-radius: 1.6rem;
+}
+.gallery-image--large {
+  width: 300px;
+  height: 100%;
+  background-color: var(--color-border);
+  grid-column: 2/3;
+  grid-row: 1/span 2;
 }/*# sourceMappingURL=main.css.map */

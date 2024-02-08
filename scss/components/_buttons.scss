@@ -12,13 +12,31 @@
         opacity: 0.5;
     }
 
-    &--primary {
-        color: var(--color-btn-primary);
-        border: 1px solid var(--color-btn-primary);
-        background-color: var(--color-white);
+    &__primary {
+        color: var(--color-white);
+        background-color: var(--color-btn-primary);
+
+        &--outline {
+            color: var(--color-btn-primary);
+            border: 1px solid var(--color-btn-primary);
+            background-color: var(--color-white);
+        }
+
+        &--link {
+            color: var(--color-btn-primary);
+            border: 1px solid var(--color-white);
+
+            &:hover {
+                border: 1px solid var(--color-btn-primary);
+            }
+        }
     }
 
-    &--secondary {
+    &__secondary {
         background-color: var(--color-btn-secondary);
+    }
+
+    &__container {
+        gap: 1.2rem;
     }
 }
