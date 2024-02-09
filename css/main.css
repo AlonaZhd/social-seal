@@ -183,6 +183,8 @@ img {
 /*=============== HERO ===============*/
 .hero {
   padding-top: 120px;
+  padding-bottom: 196px;
+  background-color: var(--color-white);
 }
 .hero .subtitle {
   padding: 1.2rem 2.4rem;
@@ -201,6 +203,30 @@ img {
   grid-template-columns: auto auto;
 }
 
+/*=============== CUSTOMERS ===============*/
+.customers {
+  border-radius: 20px;
+  background: var(--color-dark);
+  padding: 6.3rem 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -85px;
+  z-index: 5;
+}
+
+/*=============== MANAGAMENT ===============*/
+.management {
+  background-color: var(--color-bg-dark);
+  height: 1021px;
+  position: relative;
+  top: -170px;
+}
+
 /*=============== ICONS ===============*/
 .icon {
   width: 32px;
@@ -208,6 +234,11 @@ img {
 }
 .icon--light {
   fill: var(--color-icon-ligth);
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
+}
+.icon--light:hover {
+  fill: var(--color-btn-primary);
 }
 .icon-container {
   gap: 1.5rem;

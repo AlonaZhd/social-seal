@@ -6,6 +6,11 @@
 
     &--light {
         fill: var(--color-icon-ligth);
+        transition: fill 0.5s;
+
+        &:hover {
+            fill: var(--color-btn-primary);
+        }
     }
 
     &-container {
