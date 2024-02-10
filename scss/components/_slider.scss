@@ -1,0 +1,17 @@
+/*=============== SLIDER ===============*/
+.slider__item {
+    width: 379px;
+    cursor: pointer;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}

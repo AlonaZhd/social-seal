@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*=============== VARIABLES ===============*/
 :root {
   /*========== Colors ==========*/
@@ -113,6 +114,11 @@
   color: var(--color-title-accent);
 }
 
+.text--dark {
+  color: var(--color-text-dark);
+  text-decoration: underline;
+}
+
 .content-text {
   font-size: 1.9rem;
   line-height: 170%;
@@ -210,6 +216,7 @@ img {
 .hero {
   padding-top: 120px;
   padding-bottom: 196px;
+  margin-bottom: -196px;
   background-color: var(--color-white);
 }
 .hero .subtitle {
@@ -239,22 +246,89 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  top: -85px;
+  top: 85px;
   z-index: 5;
 }
 
 /*=============== MANAGAMENT ===============*/
 .management {
   background-color: var(--color-bg-dark);
-  height: 1021px;
-  position: relative;
-  top: -170px;
   padding-top: 195px;
+  padding-bottom: 112px;
 }
 .management .content-text {
   color: var(--color-text-light);
 }
 
+/*=============== EXPERTISE ===============*/
+.expertise {
+  background-color: var(--color-white);
+  padding: 112px 0;
+}
+.expertise-container {
+  gap: 44px;
+  position: relative;
+}
+.expertise-content {
+  max-width: 400px;
+  position: relative;
+}
+.expertise-slider {
+  gap: 24px;
+  left: 444px;
+  position: absolute;
+  max-width: 964px;
+}
+.expertise__float-img {
+  position: absolute;
+  -webkit-animation: rotate 5s infinite;
+          animation: rotate 5s infinite;
+}
+.expertise__float-img:nth-child(1) {
+  width: 67px;
+  left: -105px;
+  top: -50px;
+}
+.expertise__float-img:nth-child(2) {
+  width: 109px;
+  right: 83px;
+  bottom: -65px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.expertise .content-text {
+  color: var(--color-text-light);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
 /*=============== TITLE ===============*/
 .title {
   font-size: 5rem;
@@ -497,4 +571,29 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+/*=============== SLIDER ===============*/
+.slider__item {
+  width: 379px;
+  cursor: pointer;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
 }/*# sourceMappingURL=main.css.map */

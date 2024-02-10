@@ -1,0 +1,57 @@
+/*=============== EXPERTISE ===============*/
+
+.expertise {
+    background-color: var(--color-white);
+    padding: 112px 0;
+
+    &-container {
+        gap: 44px;
+        position: relative;
+    }
+
+    &-content {
+        max-width: 400px;
+        position: relative;
+    }
+
+    &-slider {
+        gap: 24px;
+        left: 444px;
+        position: absolute;
+        max-width: 964px;
+    }
+
+    &__float-img {
+        position: absolute;
+        animation: rotate 5s infinite;
+
+        &:nth-child(1) {
+            width: 67px;
+            left: -105px;
+            top: -50px;
+        }
+
+        &:nth-child(2) {
+            width: 109px;
+            right: 83px;
+            bottom: -65px;
+            animation-delay: 1s;
+        }
+    }
+
+    .content-text {
+        color: var(--color-text-light);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

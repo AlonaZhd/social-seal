@@ -46,6 +46,11 @@
     color: var(--color-title-accent);
 }
 
+.text--dark {
+    color: var(--color-text-dark);
+    text-decoration: underline;
+}
+
 .content-text {
     font-size: 1.9rem;
     line-height: 170%;
