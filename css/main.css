@@ -67,6 +67,17 @@
   margin: 0 auto;
   padding: 0;
 }
+.container--down {
+  padding-top: 80px;
+}
+
+.card-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
 
 .line {
   width: 100%;
@@ -94,16 +105,29 @@
           align-items: flex-start;
 }
 
-.title {
-  font-size: 6rem;
-  line-height: 110%;
+.subtitle {
+  font-size: 2rem;
+  line-height: 120%;
+  font-weight: 500;
   text-transform: capitalize;
+  color: var(--color-title-accent);
 }
 
-.subtitle {
-  font-size: 1.8rem;
-  line-height: 120%;
-  text-transform: capitalize;
+.content-text {
+  font-size: 1.9rem;
+  line-height: 170%;
+  color: var(--color-text);
+}
+
+.button__container {
+  padding-top: 64px;
+}
+
+.counter {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 /*=============== BASE ===============*/
@@ -119,6 +143,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 10px;
+  font-weight: 400;
 }
 
 body {
@@ -178,6 +203,7 @@ img {
 .header__nav .nav-link {
   padding: 3.5rem 0;
   font-size: 1.6rem;
+  font-weight: 500;
 }
 
 /*=============== HERO ===============*/
@@ -191,12 +217,10 @@ img {
   border-radius: 3.2rem;
   color: var(--color-white);
   background-color: var(--color-btn-secondary);
-  font-size: 1.6rem;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  font-size: 1.8rem;
 }
-.hero .button__container {
-  padding-top: 64px;
+.hero .title {
+  font-size: 6rem;
 }
 .hero-gallery {
   gap: 1.6rem;
@@ -225,6 +249,34 @@ img {
   height: 1021px;
   position: relative;
   top: -170px;
+  padding-top: 195px;
+}
+.management .content-text {
+  color: var(--color-text-light);
+}
+
+/*=============== TITLE ===============*/
+.title {
+  font-size: 5rem;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--color-title);
+}
+.title--white {
+  color: var(--color-white);
+}
+.title--red {
+  color: #f76766;
+}
+.title--light-blue {
+  color: #57c0ce;
+}
+.title--blue {
+  color: #265fdb;
+}
+.title--purple {
+  color: #a666f7;
 }
 
 /*=============== ICONS ===============*/
@@ -280,6 +332,7 @@ img {
   border-radius: 2rem;
   color: var(--color-white);
   font-size: 1.6rem;
+  font-weight: 600;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border: none;
@@ -298,7 +351,7 @@ img {
 }
 .button__primary--link {
   color: var(--color-btn-primary);
-  border: 1px solid var(--color-white);
+  border: 1px solid transparent;
 }
 .button__primary--link:hover {
   border: 1px solid var(--color-btn-primary);
@@ -351,6 +404,7 @@ img {
 .dropdown__title {
   color: var(--color-text-menu);
   font-size: 2.8rem;
+  font-weight: 300;
 }
 .dropdown__content {
   color: var(--color-text);
@@ -397,4 +451,50 @@ img {
   background-color: var(--color-border);
   grid-column: 2/3;
   grid-row: 1/span 2;
+}
+
+/*=============== COUNTERS ===============*/
+.counters {
+  gap: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.counters__card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.9rem;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0px 35px 34px 0px rgba(61, 90, 125, 0.06);
+          box-shadow: 0px 35px 34px 0px rgba(61, 90, 125, 0.06);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.counters__card--offices {
+  background-image: url(../../images/counters/counter_icon01.svg);
+}
+.counters__card--customers {
+  background-image: url(../../images/counters/counter_icon03.svg);
+}
+.counters__card--workers {
+  background-image: url(../../images/counters/counter_icon02.svg);
+  background-position: right bottom;
+}
+.counters__card--projects {
+  background-image: url(../../images/counters/counter_icon04.svg);
+}
+.counters__card .content-text {
+  color: var(--color-text-card);
+}
+.counters__card-img-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }/*# sourceMappingURL=main.css.map */

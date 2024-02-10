@@ -1,0 +1,46 @@
+/*=============== COUNTERS ===============*/
+
+.counters {
+    gap: 3rem;
+    display: flex;
+
+    &__card {
+        flex-direction: column;
+        gap: 1.9rem;
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        background-color: var(--color-white);
+        box-shadow: 0px 35px 34px 0px rgba(61, 90, 125, 0.06);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+
+        &--offices {
+            background-image: url(../../images/counters/counter_icon01.svg);
+        }
+
+        &--customers {
+            background-image: url(../../images/counters/counter_icon03.svg);
+        }
+
+        &--workers {
+            background-image: url(../../images/counters/counter_icon02.svg);
+            background-position: right bottom;
+        }
+
+        &--projects {
+            background-image: url(../../images/counters/counter_icon04.svg);
+        }
+
+        .content-text {
+            color: var(--color-text-card);
+        }
+
+        &-img-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

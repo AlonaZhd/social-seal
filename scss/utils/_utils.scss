@@ -6,6 +6,15 @@
     margin: 0 auto;
     padding: 0;
     // border: 1px solid black;
+
+    &--down {
+        padding-top: 80px;
+    }
+}
+
+.card-column {
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .line {
@@ -29,14 +38,25 @@
     align-items: flex-start;
 }
 
-.title {
-    font-size: 6rem;
-    line-height: 110%;
+.subtitle {
+    font-size: 2rem;
+    line-height: 120%;
+    font-weight: 500;
     text-transform: capitalize;
+    color: var(--color-title-accent);
 }
 
-.subtitle {
-    font-size: 1.8rem;
-    line-height: 120%;
-    text-transform: capitalize;
+.content-text {
+    font-size: 1.9rem;
+    line-height: 170%;
+    color: var(--color-text);
+}
+
+.button__container {
+    padding-top: 64px;
+}
+
+.counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
 }

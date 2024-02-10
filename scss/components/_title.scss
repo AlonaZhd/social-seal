@@ -1,0 +1,29 @@
+/*=============== TITLE ===============*/
+
+.title {
+    font-size: 5rem;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--color-title);
+
+    &--white {
+        color: var(--color-white);
+    }
+
+    &--red {
+        color: #f76766;
+    }
+
+    &--light-blue {
+        color: #57c0ce;
+    }
+
+    &--blue {
+        color: #265fdb;
+    }
+
+    &--purple {
+        color: #a666f7;
+    }
+}
