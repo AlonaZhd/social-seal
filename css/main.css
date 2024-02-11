@@ -430,6 +430,41 @@ img {
   color: var(--color-text);
 }
 
+/*=============== AUDIENCE ===============*/
+.audience {
+  background-color: var(--color-white);
+  padding: 164px 0;
+}
+.audience-container {
+  gap: 72px;
+  position: relative;
+}
+.audience-content {
+  position: relative;
+}
+.audience__float-img {
+  position: absolute;
+}
+.audience__float-img:nth-child(1) {
+  width: 68px;
+  right: -153px;
+  top: -57px;
+  -webkit-animation: rotate 5s infinite;
+          animation: rotate 5s infinite;
+}
+.audience__float-img:nth-child(2) {
+  width: 109px;
+  right: 136px;
+  bottom: -41px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation: floating 5s infinite;
+          animation: floating 5s infinite;
+}
+.audience .content-text {
+  color: var(--color-text);
+}
+
 /*=============== TITLE ===============*/
 .title {
   font-size: 5rem;

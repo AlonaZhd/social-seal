@@ -1,0 +1,38 @@
+/*=============== AUDIENCE ===============*/
+
+.audience {
+    background-color: var(--color-white);
+    padding: 164px 0;
+
+    &-container {
+        gap: 72px;
+        position: relative;
+    }
+
+    &-content {
+        position: relative;
+    }
+
+    &__float-img {
+        position: absolute;
+
+        &:nth-child(1) {
+            width: 68px;
+            right: -153px;
+            top: -57px;
+            animation: rotate 5s infinite;
+        }
+
+        &:nth-child(2) {
+            width: 109px;
+            right: 136px;
+            bottom: -41px;
+            animation-delay: 1s;
+            animation: floating 5s infinite;
+        }
+    }
+
+    .content-text {
+        color: var(--color-text);
+    }
+}
