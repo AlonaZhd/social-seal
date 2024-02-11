@@ -1,5 +1,6 @@
 @import "./utils/var";
 @import "./utils/utils";
+@import "./utils/animation";
 
 @import "./base";
 
@@ -8,6 +9,7 @@
 @import "./layouts/customers";
 @import "./layouts/management";
 @import "./layouts/expertise";
+@import "./layouts/inbox";
 
 @import "./components/title";
 @import "./components/icons";

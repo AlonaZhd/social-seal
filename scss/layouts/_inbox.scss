@@ -1,0 +1,80 @@
+/*=============== INBOX ===============*/
+
+.inbox {
+    background-color: var(--color-white);
+    padding: 60px 0;
+
+    &-container {
+        gap: 149px;
+        position: relative;
+    }
+
+    &-content {
+        max-width: 400px;
+        position: relative;
+    }
+
+    &__float-img {
+        position: absolute;
+
+        &:nth-child(1) {
+            width: 67px;
+            right: 16px;
+            top: -87px;
+            animation: rotate 5s infinite;
+        }
+
+        &:nth-child(2) {
+            width: 109px;
+            right: -53px;
+            bottom: -35px;
+            animation-delay: 1s;
+            animation: floating 5s infinite;
+        }
+    }
+
+    &__image {
+        position: relative;
+        max-width: fit-content;
+        padding: 76px;
+        border-radius: 76px;
+        border: 1px dashed var(--color-border-light);
+
+        &--big {
+            border-radius: 66px;
+        }
+
+        &--float {
+            position: absolute;
+
+            &:nth-child(1) {
+                top: -72px;
+                right: 110px;
+            }
+
+            &:nth-child(2) {
+                top: 77px;
+                left: -26px;
+            }
+
+            &:nth-child(3) {
+                top: 50%;
+                left: 53px;
+            }
+
+            &:nth-child(4) {
+                top: 300px;
+                right: -14px;
+            }
+
+            &:nth-child(5) {
+                bottom: -35px;
+                left: 66px;
+            }
+        }
+    }
+
+    .content-text {
+        color: var(--color-text);
+    }
+}

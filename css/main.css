@@ -8,6 +8,7 @@
   --color-bg-dark: #292f3e;
   --color-border: #e5e7ec;
   --color-icon-ligth: #acb5bc;
+  --color-border-light: #95bbd7;
   --color-btn-primary: #3482ff;
   --color-btn-secondary: #f79d5a;
   --color-title: #0b0b0b;
@@ -39,6 +40,7 @@
   --color-bg-dark: #292f3e;
   --color-border: #e5e7ec;
   --color-icon-ligth: #acb5bc;
+  --color-border-light: #95bbd7;
   --color-btn-primary: #3482ff;
   --color-btn-secondary: #f79d5a;
   --color-title: #0b0b0b;
@@ -136,6 +138,63 @@
           animation-delay: 0s;
 }
 
+/*=============== ANIMATION ===============*/
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(20px, 10px, 0);
+            transform: translate3d(20px, 10px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes floating {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(20px, 10px, 0);
+            transform: translate3d(20px, 10px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
 /*=============== BASE ===============*/
 *,
 *::after,
@@ -297,38 +356,80 @@ img {
           animation-delay: 1s;
 }
 .expertise .content-text {
-  color: var(--color-text-light);
+  color: var(--color-text);
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
+/*=============== INBOX ===============*/
+.inbox {
+  background-color: var(--color-white);
+  padding: 60px 0;
+}
+.inbox-container {
+  gap: 149px;
+  position: relative;
+}
+.inbox-content {
+  max-width: 400px;
+  position: relative;
+}
+.inbox__float-img {
+  position: absolute;
+}
+.inbox__float-img:nth-child(1) {
+  width: 67px;
+  right: 16px;
+  top: -87px;
+  -webkit-animation: rotate 5s infinite;
+          animation: rotate 5s infinite;
+}
+.inbox__float-img:nth-child(2) {
+  width: 109px;
+  right: -53px;
+  bottom: -35px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation: floating 5s infinite;
+          animation: floating 5s infinite;
+}
+.inbox__image {
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 76px;
+  border-radius: 76px;
+  border: 1px dashed var(--color-border-light);
+}
+.inbox__image--big {
+  border-radius: 66px;
+}
+.inbox__image--float {
+  position: absolute;
+}
+.inbox__image--float:nth-child(1) {
+  top: -72px;
+  right: 110px;
+}
+.inbox__image--float:nth-child(2) {
+  top: 77px;
+  left: -26px;
+}
+.inbox__image--float:nth-child(3) {
+  top: 50%;
+  left: 53px;
+}
+.inbox__image--float:nth-child(4) {
+  top: 300px;
+  right: -14px;
+}
+.inbox__image--float:nth-child(5) {
+  bottom: -35px;
+  left: 66px;
+}
+.inbox .content-text {
+  color: var(--color-text);
 }
 
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
 /*=============== TITLE ===============*/
 .title {
   font-size: 5rem;
