@@ -1,0 +1,54 @@
+/*=============== Troubles Growing ===============*/
+
+.troubles-growing {
+    background-color: var(--color-white);
+    padding: 60px 0;
+
+    &__container {
+        gap: 61px;
+        position: relative;
+    }
+
+    &__content {
+        max-width: 512px;
+        position: relative;
+    }
+
+    &__image {
+        position: relative;
+
+        &--float {
+            position: absolute;
+
+            &:nth-child(1) {
+                width: 45px;
+                left: -31px;
+                top: 0;
+                transform: rotate(-30deg);
+                // animation: bubbleMover 5s infinite;
+                animation-name: bubbleMover;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-duration: 12s;
+            }
+
+            &:nth-child(2) {
+                width: 293px;
+                right: 63px;
+                top: -98px;
+                animation-delay: 1s;
+                // animation: floating 5s infinite;
+                animation: ImgBounce 5s ease-in-out 0s infinite alternate;
+            }
+
+            &:nth-child(3) {
+                width: 27px;
+                right: 0;
+                bottom: 71px;
+                // animation: floating 5s infinite;
+                transform-origin: center bottom;
+                animation: ImgBounce 3s ease-in-out 0s infinite alternate;
+            }
+        }
+    }
+}

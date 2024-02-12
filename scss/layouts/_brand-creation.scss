@@ -1,20 +1,20 @@
-/*=============== EXPERTISE ===============*/
+/*=============== BRAND-CREATION ===============*/
 
-.expertise {
+.brand-creation {
     background-color: var(--color-white);
     padding: 112px 0;
 
-    &-container {
+    &__container {
         gap: 44px;
         position: relative;
     }
 
-    &-content {
+    &__content {
         max-width: 400px;
         position: relative;
     }
 
-    &-slider {
+    &__slider {
         gap: 24px;
         left: 444px;
         position: absolute;
@@ -37,9 +37,5 @@
             bottom: -65px;
             animation-delay: 1s;
         }
-    }
-
-    .content-text {
-        color: var(--color-text);
     }
 }

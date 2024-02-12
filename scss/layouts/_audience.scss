@@ -4,12 +4,12 @@
     background-color: var(--color-white);
     padding: 164px 0;
 
-    &-container {
+    &__container {
         gap: 72px;
         position: relative;
     }
 
-    &-content {
+    &__content {
         position: relative;
     }
 
@@ -30,9 +30,5 @@
             animation-delay: 1s;
             animation: floating 5s infinite;
         }
-    }
-
-    .content-text {
-        color: var(--color-text);
     }
 }

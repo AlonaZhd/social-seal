@@ -4,12 +4,12 @@
     background-color: var(--color-white);
     padding: 60px 0;
 
-    &-container {
+    &__container {
         gap: 149px;
         position: relative;
     }
 
-    &-content {
+    &__content {
         max-width: 400px;
         position: relative;
     }
@@ -72,9 +72,5 @@
                 left: 66px;
             }
         }
-    }
-
-    .content-text {
-        color: var(--color-text);
     }
 }

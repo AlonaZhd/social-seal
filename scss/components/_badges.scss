@@ -1,0 +1,50 @@
+/*=============== BADGES ===============*/
+
+.badges {
+    padding: 0.4rem 1.8rem;
+    font-size: 1.6rem;
+    line-height: 200%;
+    border-radius: 3.2rem;
+    color: var(--color-black);
+
+    &__container {
+        flex-wrap: wrap;
+        column-gap: 5px;
+        row-gap: 8px;
+    }
+
+    &--orange {
+        border: 1px solid #f89e52;
+        background-color: #fffaf1;
+    }
+
+    &--yellow {
+        border: 1px solid #fff04d;
+        background-color: #ffffee;
+    }
+
+    &--blue {
+        border: 1px solid #c7d9f2;
+        background-color: #f6fcff;
+    }
+
+    &--pink {
+        border: 1px solid #ffb6d8;
+        background-color: #fff6fa;
+    }
+
+    &--green {
+        border: 1px solid #cfe2cf;
+        background-color: #f7fff7;
+    }
+
+    &--red {
+        border: 1px solid #ffafaf;
+        background-color: #fff6f6;
+    }
+
+    &--purple {
+        border: 1px solid #dac0ff;
+        background-color: #fcf9ff;
+    }
+}

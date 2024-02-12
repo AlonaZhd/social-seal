@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".expertise-slider").slick({
+    $(".brand-creation__slider").slick({
         arrows: false,
         slidesToShow: 3,
         slidesToScroll: 1,

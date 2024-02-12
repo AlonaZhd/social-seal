@@ -23,3 +23,39 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
+@keyframes bubbleMover {
+    0% {
+        transform: translateY(0px) translateX(0) rotate(0);
+    }
+
+    30% {
+        transform: translateY(30px) translateX(50px) rotate(15deg);
+        transform-origin: center center;
+    }
+
+    50% {
+        transform: translateY(50px) translateX(100px) rotate(45deg);
+        transform-origin: right bottom;
+    }
+
+    80% {
+        transform: translateY(30px) translateX(50px) rotate(15deg);
+        transform-origin: left top;
+    }
+
+    100% {
+        transform: translateY(0px) translateX(0) rotate(0);
+        transform-origin: center center;
+    }
+}
+
+@keyframes ImgBounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
