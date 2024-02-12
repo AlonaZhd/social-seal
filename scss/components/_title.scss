@@ -26,4 +26,15 @@
     &--purple {
         color: #a666f7;
     }
+
+    &--gradient {
+        background: linear-gradient(
+            91deg,
+            #6071d9 36.51%,
+            #aa676f 63.73%,
+            #ccb41a 97.49%
+        );
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
 }

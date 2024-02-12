@@ -1,0 +1,43 @@
+/*=============== QUESTIONS ===============*/
+
+.questions {
+    background-color: var(--color-white);
+    padding-top: 112px;
+
+    .content__container--center {
+        text-align: center;
+        max-width: 800px;
+        gap: 1.6rem;
+    }
+
+    .button {
+        margin-top: 3rem;
+    }
+
+    &__wrapp {
+        gap: 52px;
+    }
+
+    &__container {
+        gap: 52px;
+        position: relative;
+    }
+
+    &__image {
+        position: relative;
+
+        &--item {
+            position: absolute;
+
+            &:nth-child(1) {
+                right: 0;
+                top: 0;
+            }
+
+            &:nth-child(2) {
+                left: 0;
+                top: 86px;
+            }
+        }
+    }
+}

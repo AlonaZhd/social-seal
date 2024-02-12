@@ -1,0 +1,14 @@
+/*=============== LIST ===============*/
+
+.list {
+    flex-direction: column;
+    gap: 1.6rem;
+
+    &__item {
+        gap: 1.5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 140%;
+        color: var(--color-text-accent);
+    }
+}
