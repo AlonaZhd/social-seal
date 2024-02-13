@@ -1,0 +1,41 @@
+/*=============== APPLICATIONS ===============*/
+
+.application {
+    margin-top: 112px;
+    padding-bottom: 80px;
+
+    &__container {
+        gap: 5.4rem;
+    }
+
+    &__content {
+        max-width: 576px;
+    }
+
+    &__image {
+        position: relative;
+        max-width: fit-content;
+
+        .counters__card {
+            position: absolute;
+            width: 196px;
+            padding: 3rem;
+
+            &:nth-child(1) {
+                width: 196px;
+                left: -50px;
+                top: 12px;
+            }
+
+            &:nth-child(2) {
+                width: 293px;
+                right: -56px;
+                bottom: -80px;
+            }
+
+            .content-text {
+                color: var(--color-title);
+            }
+        }
+    }
+}

@@ -74,6 +74,14 @@
   padding-top: 80px;
 }
 
+.bg--dark {
+  background-color: var(--color-bg-dark);
+}
+.bg--gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(24.5%, #f2faff), color-stop(68%, #f2faff), to(#fff));
+  background: linear-gradient(180deg, #fff 0%, #f2faff 24.5%, #f2faff 68%, #fff 100%);
+}
+
 .card-column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -368,7 +376,7 @@ img {
 .hero .title {
   font-size: 6rem;
 }
-.hero-gallery {
+.hero__gallery {
   gap: 1.6rem;
   grid-template-columns: auto auto;
 }
@@ -391,7 +399,6 @@ img {
 
 /*=============== MANAGAMENT ===============*/
 .management {
-  background-color: var(--color-bg-dark);
   padding-top: 195px;
   padding-bottom: 112px;
 }
@@ -403,20 +410,32 @@ img {
 .brand-creation {
   background-color: var(--color-white);
   padding-top: 112px;
+  overflow: hidden;
 }
 .brand-creation__container {
-  gap: 44px;
+  gap: 4.4rem;
   position: relative;
 }
 .brand-creation__content {
   max-width: 400px;
   position: relative;
+  z-index: 2;
 }
 .brand-creation__slider {
-  gap: 24px;
+  gap: 2.4rem;
   left: 444px;
   position: absolute;
   max-width: 964px;
+}
+.brand-creation__slider::before {
+  position: absolute;
+  content: "";
+  width: 4000px;
+  height: 100%;
+  background: #fff;
+  right: 100%;
+  top: 0;
+  z-index: 1;
 }
 .brand-creation__float-img {
   position: absolute;
@@ -442,7 +461,7 @@ img {
   padding-top: 180px;
 }
 .inbox__container {
-  gap: 149px;
+  gap: 15rem;
   position: relative;
 }
 .inbox__content {
@@ -510,7 +529,7 @@ img {
   padding-top: 224px;
 }
 .audience__container {
-  gap: 72px;
+  gap: 7.2rem;
   position: relative;
 }
 .audience__content {
@@ -543,7 +562,7 @@ img {
   padding-bottom: 112px;
 }
 .troubles-growing__container {
-  gap: 61px;
+  gap: 6rem;
   position: relative;
 }
 .troubles-growing__content {
@@ -596,6 +615,7 @@ img {
 .questions {
   background-color: var(--color-white);
   padding-top: 112px;
+  padding-bottom: 70px;
 }
 .questions .content__container--center {
   text-align: center;
@@ -606,10 +626,10 @@ img {
   margin-top: 3rem;
 }
 .questions__wrapp {
-  gap: 52px;
+  gap: 5.2rem;
 }
 .questions__container {
-  gap: 52px;
+  gap: 5.2rem;
   position: relative;
 }
 .questions__image {
@@ -627,6 +647,42 @@ img {
   top: 86px;
 }
 
+/*=============== APPLICATIONS ===============*/
+.application {
+  margin-top: 112px;
+  padding-bottom: 80px;
+}
+.application__container {
+  gap: 5.4rem;
+}
+.application__content {
+  max-width: 576px;
+}
+.application__image {
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.application__image .counters__card {
+  position: absolute;
+  width: 196px;
+  padding: 3rem;
+}
+.application__image .counters__card:nth-child(1) {
+  width: 196px;
+  left: -50px;
+  top: 12px;
+}
+.application__image .counters__card:nth-child(2) {
+  width: 293px;
+  right: -56px;
+  bottom: -80px;
+}
+.application__image .counters__card .content-text {
+  color: var(--color-title);
+}
+
 /*=============== TITLE ===============*/
 .title {
   font-size: 5rem;
@@ -641,11 +697,20 @@ img {
 .title--red {
   color: #f76766;
 }
+.title--red-dark {
+  color: #fc201e;
+}
 .title--light-blue {
   color: #57c0ce;
 }
 .title--blue {
   color: #265fdb;
+}
+.title--blue-light {
+  color: #57c0ce;
+}
+.title--blue-dark {
+  color: #1eb9fc;
 }
 .title--purple {
   color: #a666f7;
@@ -885,7 +950,7 @@ img {
 
 /* Ограничивающая оболочка */
 .slick-list {
-  overflow: hidden;
+  overflow: inherit;
 }
 
 /* Лента слайдов */
@@ -899,7 +964,15 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 24px;
+  gap: 2.4rem;
+}
+.slick-track::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 /*=============== BADGES ===============*/

@@ -3,6 +3,7 @@
 .questions {
     background-color: var(--color-white);
     padding-top: 112px;
+    padding-bottom: 70px;
 
     .content__container--center {
         text-align: center;
@@ -15,11 +16,11 @@
     }
 
     &__wrapp {
-        gap: 52px;
+        gap: 5.2rem;
     }
 
     &__container {
-        gap: 52px;
+        gap: 5.2rem;
         position: relative;
     }
 

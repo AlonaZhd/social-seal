@@ -3,22 +3,35 @@
 .brand-creation {
     background-color: var(--color-white);
     padding-top: 112px;
+    overflow: hidden;
 
     &__container {
-        gap: 44px;
+        gap: 4.4rem;
         position: relative;
     }
 
     &__content {
         max-width: 400px;
         position: relative;
+        z-index: 2;
     }
 
     &__slider {
-        gap: 24px;
+        gap: 2.4rem;
         left: 444px;
         position: absolute;
         max-width: 964px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 4000px;
+            height: 100%;
+            background: #fff;
+            right: 100%;
+            top: 0;
+            z-index: 1;
+        }
     }
 
     &__float-img {

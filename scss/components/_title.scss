@@ -13,6 +13,10 @@
 
     &--red {
         color: #f76766;
+
+        &-dark {
+            color: #fc201e;
+        }
     }
 
     &--light-blue {
@@ -21,6 +25,14 @@
 
     &--blue {
         color: #265fdb;
+
+        &-light {
+            color: #57c0ce;
+        }
+
+        &-dark {
+            color: #1eb9fc;
+        }
     }
 
     &--purple {
