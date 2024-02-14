@@ -115,6 +115,10 @@
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.content__container--center {
+  text-align: center;
+  gap: 1.6rem;
+}
 
 .subtitle {
   font-size: 2rem;
@@ -410,6 +414,8 @@ img {
 .brand-creation {
   background-color: var(--color-white);
   padding-top: 112px;
+  padding-bottom: 70px;
+  margin-bottom: -70px;
   overflow: hidden;
 }
 .brand-creation__container {
@@ -436,6 +442,17 @@ img {
   right: 100%;
   top: 0;
   z-index: 1;
+}
+.brand-creation__slider .slick-track::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.brand-creation__slider .slider__item {
+  width: 379px;
 }
 .brand-creation__float-img {
   position: absolute;
@@ -611,6 +628,42 @@ img {
           animation: ImgBounce 3s ease-in-out 0s infinite alternate;
 }
 
+/*=============== EXPERIENCE ===============*/
+.experience {
+  padding: 112px 0;
+  overflow: hidden;
+}
+.experience .content__container--center {
+  max-width: 600px;
+}
+.experience .button {
+  margin-top: 3rem;
+}
+.experience__wrapp {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.experience__slider {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+.experience__slider .slider__item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+.experience__slider .slider__item img {
+  width: 410px;
+}
+.experience__container {
+  gap: 5.2rem;
+  position: relative;
+}
+
 /*=============== QUESTIONS ===============*/
 .questions {
   background-color: var(--color-white);
@@ -618,9 +671,7 @@ img {
   padding-bottom: 70px;
 }
 .questions .content__container--center {
-  text-align: center;
   max-width: 800px;
-  gap: 1.6rem;
 }
 .questions .button {
   margin-top: 3rem;
@@ -944,8 +995,10 @@ img {
 
 /*=============== SLIDER ===============*/
 .slider__item {
-  width: 379px;
   cursor: pointer;
+}
+.slider__item img {
+  border-radius: 1.6rem;
 }
 
 /* Ограничивающая оболочка */
@@ -965,14 +1018,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2.4rem;
-}
-.slick-track::after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
 }
 
 /*=============== BADGES ===============*/

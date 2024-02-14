@@ -1,7 +1,10 @@
 /*=============== SLIDER ===============*/
 .slider__item {
-    width: 379px;
     cursor: pointer;
+
+    & img {
+        border-radius: 1.6rem;
+    }
 }
 
 /* Ограничивающая оболочка */
@@ -14,13 +17,4 @@
     align-items: center;
     justify-content: center;
     gap: 2.4rem;
-
-    &::after {
-        content: ".";
-        display: block;
-        clear: both;
-        visibility: hidden;
-        line-height: 0;
-        height: 0;
-    }
 }

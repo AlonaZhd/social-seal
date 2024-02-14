@@ -1,0 +1,37 @@
+/*=============== EXPERIENCE ===============*/
+
+.experience {
+    padding: 112px 0;
+    overflow: hidden;
+
+    .content__container--center {
+        max-width: 600px;
+    }
+
+    .button {
+        margin-top: 3rem;
+    }
+
+    &__wrapp {
+        flex-direction: column;
+    }
+
+    &__slider {
+        padding-top: 8rem;
+        padding-bottom: 10rem;
+
+        .slider__item {
+            flex-direction: column;
+            gap: 3rem;
+
+            & img {
+                width: 410px;
+            }
+        }
+    }
+
+    &__container {
+        gap: 5.2rem;
+        position: relative;
+    }
+}
