@@ -52,3 +52,11 @@ img {
     -o-object-fit: cover;
     object-fit: cover;
 }
+
+.col,
+.col-2,
+.col-3,
+.col-4,
+.col-6 {
+    padding: 0;
+}

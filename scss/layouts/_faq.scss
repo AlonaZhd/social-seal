@@ -1,0 +1,15 @@
+/*=============== FAQ ===============*/
+
+.faq {
+    background-color: var(--color-white);
+    padding-top: 177px;
+
+    &__container {
+        gap: 5.2rem;
+        position: relative;
+
+        .content__container {
+            gap: 2rem;
+        }
+    }
+}

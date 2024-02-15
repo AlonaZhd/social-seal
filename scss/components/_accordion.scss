@@ -1,0 +1,70 @@
+/*=============== ACCORDION ===============*/
+
+.accordion {
+    width: 100%;
+
+    &__item {
+        width: 100%;
+        height: 105px;
+        // overflow: hidden;
+        transition: height 0.5s ease;
+
+        &.active {
+            height: fit-content;
+
+            .accordion__content {
+                display: block;
+            }
+        }
+    }
+
+    &__tab {
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        gap: 1.8rem;
+        padding: 3.3rem 0 3.3rem 2.5rem;
+        border-radius: 20px;
+        border: 1px solid #f4f4f4;
+        box-shadow: 0px 15px 30px 0px rgba(61, 90, 125, 0.05);
+        transition: all 0.5s ease;
+
+        &.active {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            box-shadow: none;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        width: 37px;
+        height: 37px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 18.5px;
+        background: #edf2fa;
+
+        & img {
+            width: 24px;
+            height: 24px;
+            fill: var(--color-black);
+        }
+    }
+
+    &__content {
+        display: none;
+        padding: 1.7rem 8.4rem 3.1rem 8rem;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-color: #f4f4f4;
+        box-shadow: 0px 15px 30px 0px rgba(61, 90, 125, 0.05);
+        transition: all 0.5s ease;
+    }
+}
