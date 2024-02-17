@@ -2,14 +2,14 @@
 
 .team {
     padding-top: 112px;
+    padding-bottom: 30px;
     overflow: hidden;
-    padding-bottom: 112px;
 
     .content__container--center {
         max-width: 800px;
     }
 
-    &__wrapp {
+    .container {
         gap: 6.4rem;
     }
 

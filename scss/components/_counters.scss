@@ -18,19 +18,34 @@
 
         &--offices {
             background-image: url(../images/counters/counter_icon01.svg);
+
+            & .title {
+                color: #f76766;
+            }
         }
 
         &--customers {
             background-image: url(../images/counters/counter_icon03.svg);
+
+            & .title {
+                color: #57c0ce;
+            }
         }
 
         &--workers {
             background-image: url(../images/counters/counter_icon02.svg);
             background-position: right bottom;
+
+            & .title {
+                color: #265fdb;
+            }
         }
 
         &--projects {
             background-image: url(../images/counters/counter_icon04.svg);
+            & .title {
+                color: #a666f7;
+            }
         }
 
         .text {
@@ -42,5 +57,10 @@
             bottom: 0;
             left: 0;
         }
+    }
+
+    &__item {
+        animation-duration: 1s;
+        animation-delay: 0s;
     }
 }

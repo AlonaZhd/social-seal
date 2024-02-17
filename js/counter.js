@@ -1,5 +1,5 @@
-$(".counter").counterUp({
+$(".counters__item").counterUp({
     delay: 10,
     time: 2000,
 });
-$(".counter").addClass("animated fadeInDownBig");
+$(".counters__item").addClass("animated fadeInDownBig");

@@ -4,14 +4,6 @@
     padding: 90px 105px 8px 105px;
     background-color: var(--color-dark);
 
-    &__container {
-        position: relative;
-
-        .content__container {
-            gap: 2rem;
-        }
-    }
-
     &-widget {
         flex-direction: column;
         gap: 2rem;

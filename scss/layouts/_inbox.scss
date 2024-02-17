@@ -4,7 +4,7 @@
     background-color: var(--color-white);
     padding-top: 180px;
 
-    &__container {
+    .container {
         gap: 15rem;
         position: relative;
     }
@@ -50,11 +50,13 @@
             &:nth-child(1) {
                 top: -72px;
                 right: 110px;
+                animation: ImgBounce 5s ease-in-out 0s infinite alternate;
             }
 
             &:nth-child(2) {
                 top: 77px;
                 left: -26px;
+                animation: scale 5s ease-in-out 0s infinite;
             }
 
             &:nth-child(3) {
@@ -70,6 +72,7 @@
             &:nth-child(5) {
                 bottom: -35px;
                 left: 66px;
+                animation: scale 5s ease-in-out 0s infinite;
             }
         }
     }

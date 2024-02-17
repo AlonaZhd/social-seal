@@ -30,660 +30,610 @@
     </head>
     <body>
         <header class="header">
-            <div class="container">
+            <div
+                class="container d-flex justify-content-between align-items-center"
+            >
+                <a href="/">
+                    <img src="./images/logo.svg" alt="logo" />
+                </a>
+
                 <div
-                    class="header__container d-flex justify-content-between align-items-center"
+                    class="header__menu d-flex justify-content-between align-items-center"
                 >
-                    <a href="/">
-                        <img src="./images/logo.svg" alt="logo" />
-                    </a>
+                    <ul class="header__nav d-flex justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#management"
+                                >Management</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#marketing">Marketing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sales">Increase Sales</a>
+                        </li>
+                        <li class="nav-item dropdown-center">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#services"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Services
+                                <svg class="nav-link__arrow">
+                                    <use
+                                        href="./images/icons.svg#icon-dropdown-arrow"
+                                    ></use>
+                                </svg>
+                            </a>
 
-                    <div
-                        class="header__menu d-flex justify-content-between align-items-center"
+                            <ul class="dropdown-menu dropdown__menu ">
+                                <div
+                                    class="dropdown-container d-flex align-items-center container "
+                                >
+                                    <div
+                                        class="dropdown-container--row d-flex row"
+                                    >
+                                        <li class="dropdown__item col d-flex">
+                                            <h3 class="dropdown__title">
+                                                Fundamentals
+                                            </h3>
+                                            <span class="line"></span>
+                                            <ul class="dropdown-list d-flex">
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/managment-rates.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Strategy Planning</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/managment-features.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Profile Setup</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/managment-sign-up.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Theming &
+                                                        Branding</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/fundamentals-training.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Training</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown__item col d-flex">
+                                            <h3 class="dropdown__title">
+                                                Content
+                                            </h3>
+                                            <span class="line"></span>
+                                            <ul class="dropdown-list d-flex">
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/content-research.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Research &
+                                                        Planning</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/content-post.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Post Creation</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/content-video.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Video Creation</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/content-keyword.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Keyword
+                                                        Optimization</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown__item col d-flex">
+                                            <h3 class="dropdown__title">
+                                                Public Relations
+                                            </h3>
+                                            <span class="line"></span>
+                                            <ul class="dropdown-list d-flex">
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/custom-inbox.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Inbox Management</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/custom-social.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Social Listening</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/custom-brand.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Brand Reputation</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/custom-crisis.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Crisis Management</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown__item col d-flex">
+                                            <h3 class="dropdown__title">
+                                                Market Growth
+                                            </h3>
+                                            <span class="line"></span>
+                                            <ul class="dropdown-list d-flex">
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-setup.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Paid Advertising
+                                                        Setup</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-managment.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Campaign
+                                                        Management</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-optimization.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Strategy
+                                                        Optimization</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-analystics.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Analytics &
+                                                        Reporting</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </div>
+
+                                    <button
+                                        class="dropdown__button button button__primary--outline"
+                                        type="button"
+                                    >
+                                        View All Services
+                                    </button>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown-center">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Plans & Pricing
+                                <svg class="nav-link__arrow">
+                                    <use
+                                        href="./images/icons.svg#icon-dropdown-arrow"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu dropdown__menu ">
+                                <div
+                                    class="dropdown-container d-flex align-items-center container "
+                                >
+                                    <div
+                                        class="dropdown-container--row d-flex row"
+                                    >
+                                        <li class="dropdown__item col d-flex">
+                                            <h3 class="dropdown__title">
+                                                Management
+                                            </h3>
+                                            <span class="line"></span>
+                                            <div class="dropdown__content">
+                                                Great for those starting up in
+                                                Social Media and looking for a
+                                                regular management service to
+                                                keep up.
+                                            </div>
+                                            <ul class="dropdown-list d-flex">
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/managment-rates.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Rates</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/managment-features.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Features</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/managment-sign-up.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Sign Up</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown__item col d-flex">
+                                            <h3 class="dropdown__title">
+                                                Growth Plans
+                                            </h3>
+                                            <span class="line"></span>
+                                            <div class="dropdown__content">
+                                                Geared for those looking to grow
+                                                their Social Media presence and
+                                                capitalize on marketing
+                                                benefits.
+                                            </div>
+                                            <ul class="dropdown-list d-flex">
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-rates.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Rates</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-feauters.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Features</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-sign-up.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Sign Up</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown__item col d-flex">
+                                            <h3 class="dropdown__title">
+                                                Custom Plans
+                                            </h3>
+                                            <span class="line"></span>
+                                            <ul class="dropdown-list d-flex">
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/custom-inbox.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Inbox Management</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/custom-social.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Social Listening</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/custom-brand.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Brand Reputation</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/custom-crisis.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Crisis Management</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown__item col d-flex">
+                                            <h3 class="dropdown__title">
+                                                Growth
+                                            </h3>
+                                            <span class="line"></span>
+                                            <ul class="dropdown-list d-flex">
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-setup.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Paid Advertising
+                                                        Setup</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-managment.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Campaign
+                                                        Management</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-optimization.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Strategy
+                                                        Optimization</span
+                                                    >
+                                                </li>
+
+                                                <li
+                                                    class="dropdown-list__item d-flex align-items-center"
+                                                >
+                                                    <img
+                                                        class="dropdown-list__icon"
+                                                        src="./images/dropdown-icons/growth-analystics.svg"
+                                                        alt=""
+                                                    />
+                                                    <span
+                                                        class="dropdown-list__text"
+                                                        >Analytics &
+                                                        Reporting</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </div>
+
+                                    <button
+                                        class="dropdown__button button button__primary--outline"
+                                        type="button"
+                                    >
+                                        View All Services
+                                    </button>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <button
+                        class="header__button button button__secondary"
+                        type="button"
                     >
-                        <ul class="header__nav d-flex justify-content-between">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#management"
-                                    >Management</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#marketing"
-                                    >Marketing</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#sales"
-                                    >Increase Sales</a
-                                >
-                            </li>
-                            <li class="nav-item dropdown-center">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#services"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    Services
-                                    <svg class="nav-link__arrow">
-                                        <use
-                                            href="./images/icons.svg#icon-dropdown-arrow"
-                                        ></use>
-                                    </svg>
-                                </a>
-
-                                <ul class="dropdown-menu dropdown__menu ">
-                                    <div
-                                        class="dropdown-container d-flex align-items-center container "
-                                    >
-                                        <div
-                                            class="dropdown-container--row d-flex row"
-                                        >
-                                            <li
-                                                class="dropdown__item col d-flex"
-                                            >
-                                                <h3 class="dropdown__title">
-                                                    Fundamentals
-                                                </h3>
-                                                <span class="line"></span>
-                                                <ul
-                                                    class="dropdown-list d-flex"
-                                                >
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/managment-rates.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Strategy
-                                                            Planning</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/managment-features.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Profile Setup</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/managment-sign-up.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Theming &
-                                                            Branding</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/fundamentals-training.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Training</span
-                                                        >
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="dropdown__item col d-flex"
-                                            >
-                                                <h3 class="dropdown__title">
-                                                    Content
-                                                </h3>
-                                                <span class="line"></span>
-                                                <ul
-                                                    class="dropdown-list d-flex"
-                                                >
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/content-research.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Research &
-                                                            Planning</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/content-post.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Post Creation</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/content-video.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Video
-                                                            Creation</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/content-keyword.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Keyword
-                                                            Optimization</span
-                                                        >
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="dropdown__item col d-flex"
-                                            >
-                                                <h3 class="dropdown__title">
-                                                    Public Relations
-                                                </h3>
-                                                <span class="line"></span>
-                                                <ul
-                                                    class="dropdown-list d-flex"
-                                                >
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/custom-inbox.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Inbox
-                                                            Management</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/custom-social.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Social
-                                                            Listening</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/custom-brand.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Brand
-                                                            Reputation</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/custom-crisis.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Crisis
-                                                            Management</span
-                                                        >
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="dropdown__item col d-flex"
-                                            >
-                                                <h3 class="dropdown__title">
-                                                    Market Growth
-                                                </h3>
-                                                <span class="line"></span>
-                                                <ul
-                                                    class="dropdown-list d-flex"
-                                                >
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-setup.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Paid Advertising
-                                                            Setup</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-managment.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Campaign
-                                                            Management</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-optimization.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Strategy
-                                                            Optimization</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-analystics.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Analytics &
-                                                            Reporting</span
-                                                        >
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </div>
-
-                                        <button
-                                            class="dropdown__button button button__primary--outline"
-                                            type="button"
-                                        >
-                                            View All Services
-                                        </button>
-                                    </div>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item dropdown-center">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    Plans & Pricing
-                                    <svg class="nav-link__arrow">
-                                        <use
-                                            href="./images/icons.svg#icon-dropdown-arrow"
-                                        ></use>
-                                    </svg>
-                                </a>
-                                <ul class="dropdown-menu dropdown__menu ">
-                                    <div
-                                        class="dropdown-container d-flex align-items-center container "
-                                    >
-                                        <div
-                                            class="dropdown-container--row d-flex row"
-                                        >
-                                            <li
-                                                class="dropdown__item col d-flex"
-                                            >
-                                                <h3 class="dropdown__title">
-                                                    Management
-                                                </h3>
-                                                <span class="line"></span>
-                                                <div class="dropdown__content">
-                                                    Great for those starting up
-                                                    in Social Media and looking
-                                                    for a regular management
-                                                    service to keep up.
-                                                </div>
-                                                <ul
-                                                    class="dropdown-list d-flex"
-                                                >
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/managment-rates.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Rates</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/managment-features.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Features</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/managment-sign-up.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Sign Up</span
-                                                        >
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="dropdown__item col d-flex"
-                                            >
-                                                <h3 class="dropdown__title">
-                                                    Growth Plans
-                                                </h3>
-                                                <span class="line"></span>
-                                                <div class="dropdown__content">
-                                                    Geared for those looking to
-                                                    grow their Social Media
-                                                    presence and capitalize on
-                                                    marketing benefits.
-                                                </div>
-                                                <ul
-                                                    class="dropdown-list d-flex"
-                                                >
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-rates.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Rates</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-feauters.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Features</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-sign-up.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Sign Up</span
-                                                        >
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="dropdown__item col d-flex"
-                                            >
-                                                <h3 class="dropdown__title">
-                                                    Custom Plans
-                                                </h3>
-                                                <span class="line"></span>
-                                                <ul
-                                                    class="dropdown-list d-flex"
-                                                >
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/custom-inbox.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Inbox
-                                                            Management</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/custom-social.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Social
-                                                            Listening</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/custom-brand.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Brand
-                                                            Reputation</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/custom-crisis.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Crisis
-                                                            Management</span
-                                                        >
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="dropdown__item col d-flex"
-                                            >
-                                                <h3 class="dropdown__title">
-                                                    Growth
-                                                </h3>
-                                                <span class="line"></span>
-                                                <ul
-                                                    class="dropdown-list d-flex"
-                                                >
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-setup.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Paid Advertising
-                                                            Setup</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-managment.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Campaign
-                                                            Management</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-optimization.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Strategy
-                                                            Optimization</span
-                                                        >
-                                                    </li>
-
-                                                    <li
-                                                        class="dropdown-list__item d-flex align-items-center"
-                                                    >
-                                                        <img
-                                                            class="dropdown-list__icon"
-                                                            src="./images/dropdown-icons/growth-analystics.svg"
-                                                            alt=""
-                                                        />
-                                                        <span
-                                                            class="dropdown-list__text"
-                                                            >Analytics &
-                                                            Reporting</span
-                                                        >
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </div>
-
-                                        <button
-                                            class="dropdown__button button button__primary--outline"
-                                            type="button"
-                                        >
-                                            View All Services
-                                        </button>
-                                    </div>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <button
-                            class="header__button button button__secondary"
-                            type="button"
-                        >
-                            Speak With Us!
-                        </button>
-                    </div>
+                        Speak With Us!
+                    </button>
                 </div>
             </div>
         </header>
 
         <main class="main-container">
             <section class="hero">
-                <div
-                    class="hero__container d-flex align-items-center container row"
-                >
+                <div class="d-flex align-items-center container row">
                     <div class="hero__content col-6">
                         <div class="content__container d-flex">
                             <h4 class="subtitle">
@@ -694,7 +644,7 @@
                             </h1>
                             <div class="icon-container d-flex">
                                 <a href="#"
-                                    ><svg class="icon icon--light">
+                                    ><svg class="icon--light">
                                         <use
                                             href="./images/hero/hero-icons.svg#icon-linkedin"
                                         ></use>
@@ -702,7 +652,7 @@
                                 </a>
 
                                 <a href="#">
-                                    <svg class="icon icon--light">
+                                    <svg class="icon--light">
                                         <use
                                             href="./images/hero/hero-icons.svg#icon-facebook"
                                         ></use>
@@ -710,7 +660,7 @@
                                 </a>
 
                                 <a href="#">
-                                    <svg class="icon icon--light">
+                                    <svg class="icon--light">
                                         <use
                                             href="./images/hero/hero-icons.svg#icon-instagram"
                                         ></use>
@@ -718,7 +668,7 @@
                                 </a>
 
                                 <a href="#">
-                                    <svg class="icon icon--light">
+                                    <svg class="icon--light">
                                         <use
                                             href="./images/hero/hero-icons.svg#icon-twitter"
                                         ></use>
@@ -726,7 +676,7 @@
                                 </a>
 
                                 <a href="#">
-                                    <svg class="icon icon--light">
+                                    <svg class="icon--light">
                                         <use
                                             href="./images/hero/hero-icons.svg#icon-google"
                                         ></use>
@@ -734,7 +684,7 @@
                                 </a>
 
                                 <a href="#">
-                                    <svg class="icon icon--light">
+                                    <svg class="icon--light">
                                         <use
                                             href="./images/hero/hero-icons.svg#icon-youtube"
                                         ></use>
@@ -744,16 +694,10 @@
                         </div>
 
                         <div class="button__container d-flex">
-                            <button
-                                class="button button__primary"
-                                type="button"
-                            >
+                            <button class="button__primary" type="button">
                                 View Our Plans
                             </button>
-                            <button
-                                class="button button__primary--link"
-                                type="button"
-                            >
+                            <button class="button__primary--link" type="button">
                                 What we offer
                             </button>
                         </div>
@@ -791,9 +735,7 @@
             </section>
 
             <section class="management bg--dark">
-                <div
-                    class="management__container d-flex justify-content-between container row"
-                >
+                <div class="d-flex justify-content-between container row">
                     <div class="management__content col-6">
                         <div class="content__container d-flex">
                             <h4 class="subtitle">Social Media Management is</h4>
@@ -823,53 +765,45 @@
                         </div>
 
                         <div class="button__container d-flex">
-                            <button
-                                class="button button__primary"
-                                type="button"
-                            >
+                            <button class="button__primary" type="button">
                                 Contact Us
                             </button>
-                            <button
-                                class="button button__primary--link"
-                                type="button"
-                            >
+                            <button class="button__primary--link" type="button">
                                 How Can we help
                             </button>
                         </div>
                     </div>
                     <div class="counters d-flex justify-content-end col-6">
-                        <div class="container--down d-flex card-column">
+                        <div class="container--down d-flex content__container">
                             <div
                                 class="counters__card counters__card--offices d-flex align-items-center justify-content-center"
                             >
-                                <span class="title title--red counter"
-                                    >100</span
-                                >
+                                <span class="title counters__item">100</span>
                                 <span class="text">Offices</span>
                             </div>
                             <div
                                 class="counters__card counters__card--customers d-flex align-items-center justify-content-center"
                             >
-                                <span class="title title--blue-light"
-                                    ><span class="counter">15</span>K</span
+                                <span class="title"
+                                    ><span class="counters__item">15</span
+                                    >K</span
                                 >
                                 <span class="text">Customers</span>
                             </div>
                         </div>
-                        <div class="container--up d-flex card-column">
+                        <div class="container--up d-flex content__container">
                             <div
                                 class="counters__card counters__card--workers d-flex align-items-center justify-content-center"
                             >
-                                <span class="title title--blue counter"
-                                    >10</span
-                                >
+                                <span class="title counters__item">10</span>
                                 <span class="text">Workers</span>
                             </div>
                             <div
                                 class="counters__card counters__card--projects d-flex align-items-center justify-content-center"
                             >
-                                <span class="title title--purple"
-                                    ><span class="counter">1300</span>+</span
+                                <span class="title"
+                                    ><span class="counters__item">1300</span
+                                    >+</span
                                 >
                                 <span class="text">Projects</span>
                             </div>
@@ -879,9 +813,7 @@
             </section>
 
             <section class="brand-creation">
-                <div
-                    class="brand-creation__container d-flex justify-content-between container row"
-                >
+                <div class="d-flex justify-content-between container row">
                     <div class="brand-creation__content col">
                         <img
                             class="brand-creation__float-img"
@@ -913,10 +845,7 @@
                                 and keep them coming back for more!
                             </p>
 
-                            <button
-                                class="button button__primary"
-                                type="button"
-                            >
+                            <button class="button__primary" type="button">
                                 View More
                             </button>
                         </div>
@@ -963,9 +892,7 @@
             </section>
 
             <section class="inbox">
-                <div
-                    class="inbox__container d-flex align-items-center container row"
-                >
+                <div class="d-flex align-items-center container row">
                     <div class="inbox__image d-flex col">
                         <img
                             class="inbox__image--float"
@@ -1020,10 +947,7 @@
                                 the sale.
                             </p>
 
-                            <button
-                                class="button button__primary"
-                                type="button"
-                            >
+                            <button class="button__primary" type="button">
                                 Start Replying Faster
                             </button>
                         </div>
@@ -1033,7 +957,7 @@
 
             <section class="audience">
                 <div
-                    class="audience__container d-flex align-items-center justify-content-between container row"
+                    class="d-flex align-items-center justify-content-between container row"
                 >
                     <div class="audience__content col">
                         <img
@@ -1071,10 +995,7 @@
                                 spent.
                             </p>
 
-                            <button
-                                class="button button__primary"
-                                type="button"
-                            >
+                            <button class="button__primary" type="button">
                                 Start Driving Sales
                             </button>
                         </div>
@@ -1089,7 +1010,7 @@
 
             <section class="troubles-growing">
                 <div
-                    class="troubles-growing__container d-flex align-items-center justify-content-between container row"
+                    class="d-flex align-items-center justify-content-between container row"
                 >
                     <div class="troubles-growing__image d-flex col">
                         <img
@@ -1171,16 +1092,10 @@
                         </div>
 
                         <div class="button__container d-flex">
-                            <button
-                                class="button button__primary"
-                                type="button"
-                            >
+                            <button class="button__primary" type="button">
                                 Protect Your Brand
                             </button>
-                            <button
-                                class="button button__primary--link"
-                                type="button"
-                            >
+                            <button class="button__primary--link" type="button">
                                 Find Out more
                             </button>
                         </div>
@@ -1189,11 +1104,9 @@
             </section>
 
             <section class="experience bg--dark">
-                <div
-                    class="experience__wrapp d-flex align-items-center container row"
-                >
+                <div class="d-flex align-items-center container row">
                     <div
-                        class="content__container content__container--center d-flex align-items-center"
+                        class="content__container--center d-flex align-items-center"
                     >
                         <h4 class="subtitle">Our Expertise is Your Success</h4>
                         <h2 class="title title--white">
@@ -1250,7 +1163,7 @@
                         <h2 class="title title--white">
                             What Are You Waiting For?
                         </h2>
-                        <button class="button button__primary" type="button">
+                        <button class="button__primary" type="button">
                             Protect Your Brand
                         </button>
                     </div>
@@ -1258,11 +1171,9 @@
             </section>
 
             <section class="questions">
-                <div
-                    class="questions__wrapp d-flex justify-content-center container row"
-                >
+                <div class="d-flex justify-content-center container row">
                     <div
-                        class="content__container content__container--center d-flex align-items-center"
+                        class="content__container--center d-flex align-items-center"
                     >
                         <h4 class="subtitle">Our Expertise is Your Success</h4>
                         <h2 class="title">
@@ -1336,10 +1247,7 @@
                                     </li>
                                 </ul>
 
-                                <button
-                                    class="button button__primary"
-                                    type="button"
-                                >
+                                <button class="button__primary" type="button">
                                     Discover More
                                 </button>
                             </div>
@@ -1350,24 +1258,24 @@
 
             <div class="bg--gradient">
                 <section class="application">
-                    <div
-                        class="application__container d-flex justify-content-between container row"
-                    >
+                    <div class="d-flex justify-content-between container row">
                         <div class="application__image d-flex col">
                             <div
-                                class="counters__card d-flex align-items-start justify-content-center"
+                                class="counters__card d-flex justify-content-center"
                             >
-                                <span class="title title--red-dark"
-                                    ><span class="counter">5</span>+</span
+                                <span class="title"
+                                    ><span class="counters__item">5</span
+                                    >+</span
                                 >
                                 <span class="text">Years Of Experience</span>
                             </div>
 
                             <div
-                                class="counters__card d-flex align-items-start justify-content-center"
+                                class="counters__card d-flex justify-content-center"
                             >
-                                <span class="title title--red-dark"
-                                    ><span class="counter">3</span>K+</span
+                                <span class="title"
+                                    ><span class="counters__item">3</span
+                                    >K+</span
                                 >
                                 <span class="text"
                                     >Have Faithfully Completed Projects Till
@@ -1396,10 +1304,7 @@
                                     identity and reputation.
                                 </p>
 
-                                <button
-                                    class="button button__primary"
-                                    type="button"
-                                >
+                                <button class="button__primary" type="button">
                                     Protect Your Brand
                                 </button>
                             </div>
@@ -1409,7 +1314,7 @@
 
                 <section class="order-call">
                     <div
-                        class="order-call__container d-flex align-items-center justify-content-between container row"
+                        class="d-flex align-items-center justify-content-between container row"
                     >
                         <div class="order-call__content col">
                             <div class="content__container d-flex">
@@ -1426,10 +1331,7 @@
                                     Printer Took A Galley Of Type And
                                 </p>
 
-                                <button
-                                    class="button button__primary"
-                                    type="button"
-                                >
+                                <button class="button__primary" type="button">
                                     Start Driving Sales
                                 </button>
                             </div>
@@ -1463,10 +1365,7 @@
                                 />
                             </div>
 
-                            <button
-                                class="button button__primary"
-                                type="button"
-                            >
+                            <button class="button__primary" type="button">
                                 Pick best time to call
                             </button>
                         </div>
@@ -1474,11 +1373,9 @@
                 </section>
 
                 <section class="team">
-                    <div
-                        class="team__wrapp d-flex justify-content-center container row"
-                    >
+                    <div class="d-flex justify-content-center container row">
                         <div
-                            class="content__container content__container--center d-flex align-items-center"
+                            class="content__container--center d-flex align-items-center"
                         >
                             <h4 class="subtitle">
                                 Our Expertise is Your Success
@@ -1502,9 +1399,7 @@
                                         src="./images/team/inner_team03.jpg"
                                         alt="inner_team"
                                     />
-                                    <div
-                                        class="slider-card__content d-flex align-items-start justify-content-center"
-                                    >
+                                    <div class="slider-card__content d-flex">
                                         <a href="#"
                                             ><span class="slider-card__title">
                                                 Ryan Vetrovs
@@ -1524,9 +1419,7 @@
                                         src="./images/team/inner_team04.jpg"
                                         alt="inner_team"
                                     />
-                                    <div
-                                        class="slider-card__content d-flex align-items-start justify-content-center"
-                                    >
+                                    <div class="slider-card__content d-flex">
                                         <a href="#"
                                             ><span class="slider-card__title">
                                                 Emerson Saris
@@ -1546,9 +1439,7 @@
                                         src="./images/team/inner_team05.jpg"
                                         alt="inner_team"
                                     />
-                                    <div
-                                        class="slider-card__content d-flex align-items-start justify-content-center"
-                                    >
+                                    <div class="slider-card__content d-flex">
                                         <a href="#"
                                             ><span class="slider-card__title">
                                                 Lindsey Schleifer
@@ -1632,12 +1523,10 @@
             </div>
 
             <section class="faq">
-                <div
-                    class="faq__container d-flex justify-content-between container row"
-                >
+                <div class="d-flex justify-content-between container row">
                     <div class="faq__content col">
                         <img
-                            class="faq__image--item"
+                            class="faq__image"
                             src="./images/faq/faq_img.jpg"
                             alt="faq_img"
                         />
@@ -1746,66 +1635,68 @@
                 </div>
             </section>
 
-            <section class="social-strategy d-flex container row">
-                <img
-                    class="social-strategy__float-img"
-                    src="./images/social-strategy/download-guide.png"
-                />
-                <div
-                    class="content__container content__container--center d-flex align-items-center"
-                >
-                    <h6 class="title--xxl">Accelerate</h6>
-                    <h5 class="title--xl">Your Social Strategy</h5>
-
-                    <p class="text-xl">
-                        Find out how to make social media work for you. We'll
-                        send you a PDF that <br />
-                        explains different marketing strategies to help your
-                        business grow.
-                    </p>
-
+            <section class="social-strategy">
+                <div class="container d-flex row">
+                    <img
+                        class="social-strategy__float-img"
+                        src="./images/social-strategy/download-guide.png"
+                    />
                     <div
-                        class="input-group align-items-center justify-content-between"
+                        class="content__container--center d-flex align-items-center"
                     >
-                        <svg class="input-group__icon">
-                            <use href="./images/icons.svg#icon-Symbol"></use>
-                        </svg>
+                        <h6 class="title--xxl">Accelerate</h6>
+                        <h5 class="title--xl">Your Social Strategy</h5>
+
+                        <p class="text-xl">
+                            Find out how to make social media work for you.
+                            We'll send you a PDF that <br />
+                            explains different marketing strategies to help your
+                            business grow.
+                        </p>
+
                         <div
-                            class="input-group__form d-flex justify-content-between"
+                            class="input-group align-items-center justify-content-between"
                         >
-                            <input
-                                type="email"
-                                class="form__input text"
-                                placeholder="Enter your e-mail address"
-                                required
-                            />
-
-                            <button
-                                class="button button__primary"
-                                type="button"
+                            <svg class="input-group__icon">
+                                <use
+                                    href="./images/icons.svg#icon-Symbol"
+                                ></use>
+                            </svg>
+                            <div
+                                class="input-group__form d-flex justify-content-between"
                             >
-                                Download PDF
-                            </button>
-                        </div>
-                    </div>
+                                <input
+                                    type="email"
+                                    class="form__input text"
+                                    placeholder="Enter your e-mail address"
+                                    required
+                                />
 
-                    <p class="text--xs">
-                        Upon supplying us with your e-mail, we will send you a
-                        link to download this PDF. We will also follow up with
-                        you within 5 days to see if there<br />
-                        is any way we can help you and we'll sign you up to
-                        receive updated tips and tricks for growing your social
-                        media but don't worry, we only <br />
-                        send this newsletter once a month, and you can easily
-                        unsubscribe from all communications at any time.
-                    </p>
+                                <button class="button__primary" type="button">
+                                    Download PDF
+                                </button>
+                            </div>
+                        </div>
+
+                        <p class="text--xs">
+                            Upon supplying us with your e-mail, we will send you
+                            a link to download this PDF. We will also follow up
+                            with you within 5 days to see if there<br />
+                            is any way we can help you and we'll sign you up to
+                            receive updated tips and tricks for growing your
+                            social media but don't worry, we only <br />
+                            send this newsletter once a month, and you can
+                            easily unsubscribe from all communications at any
+                            time.
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
 
         <footer>
             <section class="footer">
-                <div class="footer__container d-flex container row">
+                <div class="d-flex container row">
                     <div class="footer-widget d-flex col-lg-3">
                         <a href="/">
                             <img src="./images/logo-footer.svg" alt="logo" />

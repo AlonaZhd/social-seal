@@ -4,7 +4,7 @@
     margin-top: 112px;
     padding-bottom: 80px;
 
-    &__container {
+    .container {
         gap: 5.4rem;
     }
 
@@ -16,10 +16,18 @@
         position: relative;
         max-width: fit-content;
 
+        &--big {
+            border-radius: 2.4rem;
+        }
+
         .counters__card {
             position: absolute;
             width: 196px;
             padding: 3rem;
+
+            & .title {
+                color: #fc201e;
+            }
 
             &:nth-child(1) {
                 width: 196px;

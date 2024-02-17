@@ -5,6 +5,7 @@
     height: 32px;
 
     &--light {
+        @extend .icon;
         fill: var(--color-icon-ligth);
         transition: fill 0.5s;
 
