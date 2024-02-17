@@ -1,0 +1,25 @@
+/*=============== FORM ===============*/
+
+.form {
+    max-width: 482px;
+    flex-direction: column;
+    gap: 3rem;
+
+    &__input-list {
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__input-item {
+        padding: 2.3rem 2.9rem;
+        border-radius: 13px;
+        border: 1px solid var(--color-border);
+
+        background: #fbfdff;
+
+        &::placeholder {
+            color: var(--color-title);
+        }
+    }
+}

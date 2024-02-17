@@ -7,6 +7,11 @@
     text-transform: capitalize;
     color: var(--color-title);
 
+    &--form {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
     &--xl {
         font-size: 7.2rem;
         line-height: 80%;
