@@ -7,6 +7,17 @@
     text-transform: capitalize;
     color: var(--color-title);
 
+    &--xl {
+        font-size: 7.2rem;
+        line-height: 80%;
+        color: #ff7012;
+    }
+
+    &--xxl {
+        font-size: 9.6rem;
+        line-height: 80%;
+    }
+
     &--white {
         color: var(--color-white);
     }

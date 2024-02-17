@@ -71,25 +71,6 @@
     }
 }
 
-.text {
-    font-size: 1.9rem;
-    line-height: 170%;
-    font-weight: 300;
-    color: var(--color-text);
-
-    &--dark {
-        color: var(--color-text-dark);
-    }
-    &--ul {
-        text-decoration: underline;
-    }
-
-    &--small {
-        font-size: 1.6rem;
-        font-weight: normal;
-    }
-}
-
 .button__container {
     padding-top: 64px;
 }

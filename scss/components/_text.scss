@@ -1,0 +1,30 @@
+/*=============== TEXT ===============*/
+
+.text {
+    font-size: 1.9rem;
+    line-height: 170%;
+    font-weight: 300;
+    color: var(--color-text);
+
+    &--xl {
+        font-size: 2.9rem;
+        font-weight: 300;
+    }
+
+    &--dark {
+        color: var(--color-text-dark);
+    }
+    &--ul {
+        text-decoration: underline;
+    }
+
+    &--small {
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
+
+    &--xs {
+        font-size: 1.4rem;
+        color: var(--color-text-light);
+    }
+}
