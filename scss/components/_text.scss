@@ -6,24 +6,33 @@
     font-weight: 300;
     color: var(--color-text);
 
-    &--xl {
-        font-size: 2.9rem;
-        font-weight: 300;
+    &--light {
+        color: var(--color-text-menu-light);
     }
 
     &--dark {
         color: var(--color-text-dark);
     }
+
     &--ul {
+        @extend .text;
         text-decoration: underline;
     }
 
+    &--xl {
+        @extend .text;
+        font-size: 2.9rem;
+        font-weight: 300;
+    }
+
     &--small {
+        @extend .text;
         font-size: 1.6rem;
         font-weight: normal;
     }
 
     &--xs {
+        @extend .text;
         font-size: 1.4rem;
         color: var(--color-text-light);
     }

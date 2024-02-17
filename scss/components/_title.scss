@@ -7,18 +7,26 @@
     text-transform: capitalize;
     color: var(--color-title);
 
+    &--footer {
+        @extend .title;
+        font-size: 2rem;
+    }
+
     &--form {
+        @extend .title;
         font-size: 3rem;
         font-weight: 500;
     }
 
     &--xl {
+        @extend .title;
         font-size: 7.2rem;
         line-height: 80%;
         color: #ff7012;
     }
 
     &--xxl {
+        @extend .title;
         font-size: 9.6rem;
         line-height: 80%;
     }
@@ -67,6 +75,7 @@
     }
 
     &--accordion {
+        @extend .title;
         font-size: 1.8rem;
     }
 }

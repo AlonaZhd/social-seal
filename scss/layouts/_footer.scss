@@ -1,0 +1,45 @@
+/*=============== FOOTER ===============*/
+
+.footer {
+    padding: 90px 105px 8px 105px;
+    background-color: var(--color-dark);
+
+    &__container {
+        position: relative;
+
+        .content__container {
+            gap: 2rem;
+        }
+    }
+
+    &-widget {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0px 15px 40px 15px;
+
+        &:nth-child(2) .footer-widget__list,
+        &:nth-child(3) .footer-widget__list {
+            list-style: disc;
+            margin-left: 2rem;
+        }
+
+        &:nth-child(4) .footer-widget__list {
+            gap: 2.4rem;
+        }
+
+        &__list {
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        &__icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 13px;
+        }
+
+        .nav-link {
+            color: var(--color-text-menu-light);
+        }
+    }
+}
