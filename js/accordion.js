@@ -6,5 +6,3 @@ $(".accordion__tab").click(function () {
     $(this).parent().addClass("active");
     $(this).addClass("active");
 });
-
-const tilt = $(".social-strategy__float-img").tilt();
