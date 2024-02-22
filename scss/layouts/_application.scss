@@ -45,5 +45,10 @@
                 color: var(--color-title);
             }
         }
+
+        .counters__item {
+            animation-duration: 0.2s;
+            animation-delay: 0s;
+        }
     }
 }

@@ -302,6 +302,10 @@ h6 {
   margin-bottom: 0;
 }
 
+p {
+  margin: 0;
+}
+
 ul {
   list-style: none;
   margin-bottom: 0;
@@ -332,6 +336,14 @@ img {
 .col-4,
 .col-6 {
   padding: 0;
+}
+
+label {
+  margin: 0;
+}
+
+input[type=radio] {
+  display: none;
 }
 
 /*=============== HEADER ===============*/
@@ -737,6 +749,12 @@ img {
 .application__image .counters__card .text, .application__image .counters__card .text--xs, .application__image .counters__card .text--small, .application__image .counters__card .text--xl, .application__image .counters__card .text--ul {
   color: var(--color-title);
 }
+.application__image .counters__item {
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
 
 /*=============== TEAM ===============*/
 .team {
@@ -915,6 +933,59 @@ img {
   color: var(--color-text-menu-light);
 }
 
+/*=============== MODAL ===============*/
+.modal-content {
+  padding: 4.6rem;
+  gap: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(61, 90, 125, 0.08);
+          box-shadow: 0px 15px 30px 0px rgba(61, 90, 125, 0.08);
+}
+.modal-header {
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  border: none;
+}
+.modal-body {
+  padding: 0;
+  padding-top: 1.2rem;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.modal-body__item {
+  width: 100%;
+  position: relative;
+}
+.modal-body__item .cal_id-bootstrapDatepickr {
+  top: 0;
+  width: 100%;
+}
+.modal-body__item .icon--drop {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; /* Виключає стандартний вигляд стрілки у деяких браузерах */
+  background-image: url("../../images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 2.9rem center; /* Визначте відступ справа від тексту */
+}
+.modal-body .form__input-item {
+  padding-right: 20px;
+}
+.modal-dialog--sl {
+  max-width: 670px;
+}
+
 /*=============== TITLE ===============*/
 .title, .title--accordion, .title--xxl, .title--xl, .title--form, .title--footer {
   font-size: 5rem;
@@ -999,6 +1070,34 @@ img {
   font-size: 1.4rem;
   color: var(--color-text-light);
 }
+.text--fb {
+  font-weight: 500;
+  color: #4e6cb4;
+}
+.text--inst {
+  font-weight: 500;
+  color: #ee4983;
+}
+.text--li {
+  font-weight: 500;
+  color: #0478b5;
+}
+.text--g {
+  font-weight: 500;
+  color: #4989f5;
+}
+.text--tw {
+  font-weight: 500;
+  color: var(--color-black);
+}
+.text--yt {
+  font-weight: 500;
+  color: #e42c2d;
+}
+.text--pt {
+  font-weight: 500;
+  color: #ef4a48;
+}
 
 /*=============== ICONS ===============*/
 .icon, .icon--light {
@@ -1057,6 +1156,7 @@ img {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border: none;
+  white-space: nowrap;
 }
 .button:hover, .button__secondary:hover, .button__primary--link:hover, .button__primary--outline:hover, .button__primary:hover {
   opacity: 0.5;
@@ -1417,7 +1517,6 @@ img {
 .input-group {
   margin-top: 86px;
   margin-bottom: 80px;
-  gap: 2.4rem;
   border-radius: 24px;
   border: 1px solid #efefef;
   background: #fff;
@@ -1429,17 +1528,19 @@ img {
 .input-group__icon {
   width: 32px;
   height: 32px;
-}
-.input-group__form {
-  gap: 3.2rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32px;
+          flex: 0 0 32px;
 }
 .input-group .form__input {
-  padding: 0 1.1rem;
+  padding-left: 25px;
   border: none;
   color: var(--color-text-accent);
 }
-.input-group .button, .input-group .button__primary, .input-group .button__primary--outline, .input-group .button__primary--link, .input-group .button__secondary {
+.input-group .form__button {
   padding: 1.6rem 3.9rem;
+  border-radius: 2rem !important;
+  z-index: 2;
 }
 
 /*=============== FORM ===============*/
@@ -1488,4 +1589,72 @@ img {
 }
 .copyright .text, .copyright .text--ul, .copyright .text--xl, .copyright .text--small, .copyright .text--xs {
   color: var(--color-white);
+}
+
+/*=============== TABLE ===============*/
+.modal-table {
+  padding: 1.6rem 0;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+}
+.modal-table .table__header--item {
+  color: var(--color-title);
+}
+.modal-table .table__header--item:nth-child(1) {
+  width: 144px;
+}
+.modal-table .table__header--item:nth-child(4) {
+  width: 200px;
+}
+.modal-table .table__body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+}
+.modal-table .table__body--item {
+  width: 100%;
+}
+.modal-table .table__body--item-group {
+  gap: 8px;
+  width: 144px;
+}
+.modal-table .table__body--item .form__input-label {
+  width: 100%;
+}
+.modal-table .table__body--item .form__input-item {
+  width: 200px;
+}
+
+.custom-radio {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  border: 1px solid var(--color-border);
+  background-color: #fbfdff;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type=radio]:checked + .custom-radio {
+  border: 1px solid #3482fe;
+  background-color: #3482fe;
+}
+input[type=radio]:checked + .custom-radio::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../../images/check.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }/*# sourceMappingURL=main.css.map */

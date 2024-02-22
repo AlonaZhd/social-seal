@@ -1,0 +1,26 @@
+.custom-radio {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    border: 1px solid var(--color-border);
+    background-color: #fbfdff;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .custom-radio {
+    border: 1px solid #3482fe;
+    background-color: #3482fe;
+
+    &::after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url("../../images/check.svg");
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

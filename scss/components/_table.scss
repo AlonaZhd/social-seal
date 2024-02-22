@@ -1,0 +1,42 @@
+/*=============== TABLE ===============*/
+
+.modal-table {
+    padding: 1.6rem 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    .table__header--item {
+        color: var(--color-title);
+
+        &:nth-child(1) {
+            width: 144px;
+        }
+
+        &:nth-child(4) {
+            width: 200px;
+        }
+    }
+
+    .table__body {
+        flex-direction: column;
+        gap: 1.6rem;
+
+        &--item {
+            width: 100%;
+
+            &-group {
+                gap: 8px;
+                width: 144px;
+            }
+
+            .form__input-label {
+                width: 100%;
+            }
+
+            .form__input-item {
+                width: 200px;
+            }
+        }
+    }
+}

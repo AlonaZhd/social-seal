@@ -36,4 +36,39 @@
         font-size: 1.4rem;
         color: var(--color-text-light);
     }
+
+    &--fb {
+        font-weight: 500;
+        color: #4e6cb4;
+    }
+
+    &--inst {
+        font-weight: 500;
+        color: #ee4983;
+    }
+
+    &--li {
+        font-weight: 500;
+        color: #0478b5;
+    }
+
+    &--g {
+        font-weight: 500;
+        color: #4989f5;
+    }
+
+    &--tw {
+        font-weight: 500;
+        color: var(--color-black);
+    }
+
+    &--yt {
+        font-weight: 500;
+        color: #e42c2d;
+    }
+
+    &--pt {
+        font-weight: 500;
+        color: #ef4a48;
+    }
 }
