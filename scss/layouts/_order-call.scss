@@ -3,7 +3,8 @@
 .order-call {
     padding-top: 112px;
 
-    .container {
+    &__container {
+        width: 100%;
         gap: 9.3rem;
     }
 

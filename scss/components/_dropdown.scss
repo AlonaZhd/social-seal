@@ -4,6 +4,7 @@
     &-toggle {
         &::after {
             border: none;
+            margin: 0;
         }
         &.show {
             color: var(--color-title-accent);
@@ -57,6 +58,7 @@
     }
 
     &-list {
+        display: flex;
         flex-direction: column;
         gap: 1rem;
 

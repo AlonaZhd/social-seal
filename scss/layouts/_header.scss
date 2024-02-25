@@ -1,7 +1,6 @@
 /*=============== HEADER ===============*/
 
 .header {
-    width: 100%;
     padding: 7px 0;
     position: sticky;
     top: 0;
@@ -9,11 +8,18 @@
     background-color: var(--color-white);
     z-index: 10;
 
+    &__container {
+        width: 100%;
+        gap: 2rem;
+        position: relative;
+    }
+
     &__menu {
         gap: 5.2rem;
     }
 
     &__nav {
+        display: flex;
         gap: 3.2rem;
 
         .nav-link {
@@ -21,5 +27,9 @@
             font-size: 1.6rem;
             font-weight: 500;
         }
+    }
+
+    &__logo {
+        max-width: fit-content;
     }
 }

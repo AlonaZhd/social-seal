@@ -5,6 +5,12 @@
     padding-top: 112px;
     padding-bottom: 70px;
 
+    &__container {
+        flex-direction: column;
+        gap: 5.2rem;
+        position: relative;
+    }
+
     .content__container--center {
         max-width: 800px;
     }
@@ -14,15 +20,12 @@
     }
 
     &__wrapp {
-        gap: 5.2rem;
-    }
-
-    .container {
-        gap: 5.2rem;
-        position: relative;
+        width: 100%;
+        gap: 2.5rem;
     }
 
     &__image {
+        padding: 0 1.5rem;
         position: relative;
 
         &--item {

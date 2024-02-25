@@ -40,10 +40,10 @@ $(document).ready(function () {
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 2,
-        // autoplay: true,
         variableWidth: true,
-        autoplaySpeed: 5000,
-        cssEase: "ease",
-        pauseOnHover: true,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
+        // cssEase: "ease",
+        // pauseOnHover: true,
     });
 });

@@ -4,7 +4,8 @@
     margin-top: 112px;
     padding-bottom: 80px;
 
-    .container {
+    &__container {
+        width: 100%;
         gap: 5.4rem;
     }
 

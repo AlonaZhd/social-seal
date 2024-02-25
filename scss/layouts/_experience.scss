@@ -12,7 +12,7 @@
         margin-top: 3rem;
     }
 
-    .container {
+    &__container {
         flex-direction: column;
     }
 
@@ -33,5 +33,9 @@
     &__container {
         gap: 5.2rem;
         position: relative;
+    }
+
+    .button__primary {
+        margin: 0;
     }
 }

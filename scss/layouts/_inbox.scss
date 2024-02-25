@@ -4,8 +4,11 @@
     background-color: var(--color-white);
     padding-top: 180px;
 
-    .container {
-        gap: 15rem;
+    display: none;
+
+    &__container {
+        width: 100%;
+        gap: 13.5rem;
         position: relative;
     }
 

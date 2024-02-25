@@ -9,11 +9,14 @@
         max-width: 800px;
     }
 
-    .container {
+    &__container {
+        width: 100%;
         gap: 6.4rem;
+        flex-direction: column;
     }
 
     &__slider {
+        width: 100%;
         position: relative;
     }
 
