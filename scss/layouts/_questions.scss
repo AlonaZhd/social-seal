@@ -5,6 +5,17 @@
     padding-top: 112px;
     padding-bottom: 70px;
 
+    @media screen and (max-width: $screen-laptop) {
+        background-image: url("../../images/questions/company_shape.png");
+        background-size: 100%;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (max-width: $screen-mobile) {
+        padding-top: 80px;
+    }
+
     &__container {
         flex-direction: column;
         gap: 5.2rem;
@@ -22,23 +33,54 @@
     &__wrapp {
         width: 100%;
         gap: 2.5rem;
+
+        @media screen and (max-width: $screen-laptop) {
+            flex-direction: column;
+            gap: 5rem;
+        }
+    }
+
+    &__content {
+        .title--gradient {
+            padding-right: 5.7rem;
+            width: 349px;
+
+            @media screen and (max-width: $screen-laptop) {
+                padding: 0;
+                width: fit-content;
+            }
+        }
     }
 
     &__image {
         padding: 0 1.5rem;
         position: relative;
 
-        &--item {
-            position: absolute;
+        @media screen and (max-width: $screen-laptop) {
+            justify-content: end;
+        }
 
+        &--item {
             &:nth-child(1) {
+                object-fit: contain;
                 right: 0;
                 top: 0;
+                padding-bottom: 7rem;
             }
 
             &:nth-child(2) {
-                left: 0;
+                position: absolute;
+                right: 300px;
                 top: 86px;
+
+                @media screen and (max-width: $screen-laptop) {
+                    right: 190px;
+                }
+
+                @media screen and (max-width: $screen-mobile) {
+                    right: 110px;
+                    height: -webkit-fill-available;
+                }
             }
         }
     }

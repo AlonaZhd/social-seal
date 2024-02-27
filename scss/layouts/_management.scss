@@ -4,12 +4,53 @@
     padding-top: 195px;
     padding-bottom: 112px;
 
+    @media screen and (max-width: $screen-laptop) {
+        padding-top: 164px;
+        padding-bottom: 120px;
+    }
+
+    @media screen and (max-width: $screen-mobile) {
+        padding-top: 144px;
+        padding-bottom: 78px;
+    }
+
     &__container {
         width: 100%;
         gap: 5rem;
+
+        @media screen and (max-width: $screen-laptop) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .content__container {
+        @media screen and (max-width: $screen-laptop) {
+            padding: 0 6rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: $screen-mobile) {
+            padding: 0;
+        }
+    }
+
+    .button__container {
+        justify-content: center;
+
+        @media screen and (max-width: $screen-mobile) {
+            flex-direction: column;
+        }
     }
 
     .text {
         color: var(--color-text-light);
+    }
+
+    .title {
+        @media screen and (max-width: $screen-mobile) {
+            font-size: 4.5rem;
+        }
     }
 }

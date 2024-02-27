@@ -4,13 +4,26 @@
     padding-top: 112px;
     padding-bottom: 112px;
 
-    .container {
+    @media screen and (max-width: $screen-laptop) {
+        padding: 9.6rem 0;
+    }
+
+    &__container {
+        width: 100%;
         position: relative;
         overflow: hidden;
+
+        .content__container--center {
+            padding: 0 8rem;
+
+            @media screen and (max-width: $screen-tablet) {
+                padding: 0;
+            }
+        }
     }
 
     &__float-img {
         position: absolute;
-        top: 210px;
+        bottom: 210px;
     }
 }

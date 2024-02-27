@@ -5,10 +5,33 @@
     padding-bottom: 8px;
     background-color: var(--color-dark);
 
+    &__container {
+        display: flex;
+
+        @media screen and (max-width: $screen-laptop) {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: $screen-mobile) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     &-widget {
         flex-direction: column;
         gap: 2rem;
         padding: 0px 15px 40px 15px;
+
+        @media screen and (max-width: $screen-laptop) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: $screen-mobile) {
+            align-items: center;
+            text-align: center;
+        }
 
         &:nth-child(2) .footer-widget__list,
         &:nth-child(3) .footer-widget__list {

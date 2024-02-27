@@ -8,6 +8,10 @@
     background-color: var(--color-white);
     z-index: 10;
 
+    @media screen and (max-width: $screen-laptop) {
+        padding: 2rem 0;
+    }
+
     &__container {
         width: 100%;
         gap: 2rem;
@@ -16,11 +20,23 @@
 
     &__menu {
         gap: 5.2rem;
+
+        @media screen and (max-width: $screen-desktop) {
+            gap: 1.6rem;
+        }
     }
 
     &__nav {
         display: flex;
         gap: 3.2rem;
+
+        @media screen and (max-width: $screen-desktop) {
+            gap: 1.2rem;
+        }
+
+        @media screen and (max-width: $screen-laptop) {
+            display: none;
+        }
 
         .nav-link {
             padding: 3.5rem 0;
@@ -31,5 +47,11 @@
 
     &__logo {
         max-width: fit-content;
+    }
+
+    &__button {
+        @media screen and (max-width: $screen-mobile) {
+            display: none;
+        }
     }
 }

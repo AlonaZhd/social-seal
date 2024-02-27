@@ -11,6 +11,11 @@
         flex-wrap: wrap;
         column-gap: 5px;
         row-gap: 8px;
+
+        @media screen and (max-width: $screen-laptop) {
+            padding: 1.6rem 0;
+            justify-content: center;
+        }
     }
 
     &--orange {

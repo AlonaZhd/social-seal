@@ -7,6 +7,14 @@
     text-transform: capitalize;
     color: var(--color-title);
 
+    @media screen and (max-width: $screen-laptop) {
+        font-size: 4.5rem;
+    }
+
+    @media screen and (max-width: $screen-mobile) {
+        font-size: 3.2rem;
+    }
+
     &--footer {
         @extend .title;
         font-size: 2rem;
@@ -23,22 +31,32 @@
         font-size: 7.2rem;
         line-height: 80%;
         color: #ff7012;
+
+        @media screen and (max-width: $screen-laptop) {
+            font-size: 5rem;
+        }
+
+        @media screen and (max-width: $screen-mobile) {
+            font-size: 2.6rem;
+        }
     }
 
     &--xxl {
         @extend .title;
         font-size: 9.6rem;
         line-height: 80%;
+
+        @media screen and (max-width: $screen-laptop) {
+            font-size: 7rem;
+        }
+
+        @media screen and (max-width: $screen-mobile) {
+            font-size: 4.8rem;
+        }
     }
 
     &--white {
         color: var(--color-white);
-    }
-
-    &--blue {
-        &-dark {
-            color: #1eb9fc;
-        }
     }
 
     &--gradient {

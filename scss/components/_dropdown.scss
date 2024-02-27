@@ -29,6 +29,12 @@
         border-bottom: 1px solid var(--color-border);
         background: var(--color-white);
         box-shadow: 0px 14px 44px 0px rgba(0, 0, 0, 0.05);
+        max-height: calc(100vh - 188px);
+        overflow-y: auto;
+
+        @media screen and (max-width: $screen-tablet) {
+            max-height: calc(100vh - 502px);
+        }
     }
 
     &-container {
@@ -37,6 +43,20 @@
         &--row {
             width: 100%;
             gap: 2.8rem;
+        }
+
+        &--grid {
+            width: 100%;
+            margin-bottom: 6rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8rem;
+
+            @media screen and (max-width: $screen-mobile) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 
@@ -61,6 +81,10 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
+        @media screen and (max-width: $screen-mobile) {
+            display: none;
+        }
 
         &__item {
             gap: 1.2rem;

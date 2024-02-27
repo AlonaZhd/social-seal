@@ -5,15 +5,33 @@
     padding-top: 224px;
     padding-bottom: 112px;
 
+    @media screen and (max-width: $screen-laptop) {
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (max-width: $screen-mobile) {
+        padding-bottom: 70px;
+    }
+
     &__container {
         width: 100%;
         gap: 6rem;
         position: relative;
+
+        @media screen and (max-width: $screen-laptop) {
+            flex-direction: column;
+        }
     }
 
     &__content {
         max-width: 512px;
         position: relative;
+
+        @media screen and (max-width: $screen-laptop) {
+            max-width: fit-content;
+            padding: 0 1.5rem;
+        }
     }
 
     &__image {
@@ -39,6 +57,10 @@
                 top: -98px;
                 animation-delay: 1s;
                 animation: ImgBounce 5s ease-in-out 0s infinite alternate;
+
+                @media screen and (max-width: $screen-laptop) {
+                    display: none;
+                }
             }
 
             &:nth-child(3) {
@@ -47,6 +69,20 @@
                 bottom: 71px;
                 transform-origin: center bottom;
                 animation: ImgBounce 3s ease-in-out 0s infinite alternate;
+
+                @media screen and (max-width: $screen-laptop) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .button__container {
+        @media screen and (max-width: $screen-laptop) {
+            justify-content: center;
+
+            .button__primary--link {
+                display: none;
             }
         }
     }

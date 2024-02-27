@@ -8,6 +8,10 @@
         border: 1px solid var(--color-border);
         background: var(--color-white);
         box-shadow: 0px 15px 30px 0px rgba(61, 90, 125, 0.08);
+
+        @media screen and (max-width: $screen-mobile) {
+            padding: 2.1rem;
+        }
     }
 
     &-header {
@@ -49,5 +53,24 @@
 
     &-dialog--sl {
         max-width: 670px;
+
+        @media screen and (max-width: $screen-mobile) {
+            .form__input-item {
+                max-width: 100%;
+                option {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .table__header {
+                flex-wrap: wrap;
+                row-gap: 1rem;
+            }
+
+            .modal-table .table__body--item {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+        }
     }
 }

@@ -24,6 +24,14 @@
                 var(--color-dark),
                 transparent
             );
+
+            @media screen and (max-width: $screen-mobile) {
+                background: linear-gradient(
+                    90deg,
+                    var(--color-dark),
+                    transparent
+                );
+            }
         }
 
         &::after {

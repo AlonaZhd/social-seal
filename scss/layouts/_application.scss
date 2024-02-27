@@ -4,9 +4,19 @@
     margin-top: 112px;
     padding-bottom: 80px;
 
+    @media screen and (max-width: $screen-laptop) {
+        margin: 0;
+        padding: 9.7rem 0;
+    }
+
     &__container {
         width: 100%;
         gap: 5.4rem;
+
+        @media screen and (max-width: $screen-laptop) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__content {
@@ -16,30 +26,40 @@
     &__image {
         position: relative;
         max-width: fit-content;
+        margin-bottom: 80px;
 
         &--big {
             border-radius: 2.4rem;
         }
 
         .counters__card {
+            display: flex;
             position: absolute;
             width: 196px;
             padding: 3rem;
 
-            & .title {
-                color: #fc201e;
+            @media screen and (max-width: $screen-mobile) {
+                display: none;
             }
 
             &:nth-child(1) {
                 width: 196px;
                 left: -50px;
                 top: 12px;
+
+                .title {
+                    color: #fc201e;
+                }
             }
 
             &:nth-child(2) {
                 width: 293px;
                 right: -56px;
                 bottom: -80px;
+
+                .title {
+                    color: #1eb9fc;
+                }
             }
 
             .text {

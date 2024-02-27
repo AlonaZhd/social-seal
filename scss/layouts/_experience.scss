@@ -4,6 +4,19 @@
     padding: 112px 0;
     overflow: hidden;
 
+    @media screen and (max-width: $screen-laptop) {
+        padding-bottom: 80px;
+    }
+
+    &__container {
+        gap: 5.2rem;
+        position: relative;
+
+        @media screen and (max-width: $screen-laptop) {
+            gap: 7rem;
+        }
+    }
+
     .content__container--center {
         max-width: 600px;
     }
@@ -20,6 +33,10 @@
         padding-top: 8rem;
         padding-bottom: 10rem;
 
+        @media screen and (max-width: $screen-laptop) {
+            padding: 0;
+        }
+
         .slider__item {
             flex-direction: column;
             gap: 3rem;
@@ -30,12 +47,15 @@
         }
     }
 
-    &__container {
-        gap: 5.2rem;
-        position: relative;
-    }
-
     .button__primary {
         margin: 0;
+    }
+
+    .ask-container {
+        @media screen and (max-width: $screen-mobile) {
+            flex-direction: column;
+            text-align: center;
+            gap: 1.3rem;
+        }
     }
 }

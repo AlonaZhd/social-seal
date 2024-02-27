@@ -10,5 +10,9 @@
         font-weight: 500;
         line-height: 140%;
         color: var(--color-text-accent);
+
+        &--img {
+            height: 100%;
+        }
     }
 }

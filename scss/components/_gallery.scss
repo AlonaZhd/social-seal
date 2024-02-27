@@ -1,18 +1,31 @@
 /*=============== GALLERY ===============*/
 
 .gallery {
-    display: grid;
     justify-content: end;
+    gap: 1.6rem;
 
-    &-image {
+    @media screen and (max-width: $screen-mobile) {
+        gap: 8px;
+    }
+
+    &__col {
+        flex-direction: column;
+        gap: 1.6rem;
+
+        @media screen and (max-width: $screen-mobile) {
+            gap: 8px;
+        }
+    }
+
+    @media screen and (max-width: $screen-laptop) {
+        justify-content: center;
+    }
+
+    &__image {
         border-radius: 1.6rem;
 
         &--large {
-            width: 300px;
             height: 100%;
-            background-color: var(--color-border);
-            grid-column: 2 / 3;
-            grid-row: 1 / span 2;
         }
     }
 }

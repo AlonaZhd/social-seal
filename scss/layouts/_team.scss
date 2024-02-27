@@ -5,6 +5,10 @@
     padding-bottom: 30px;
     overflow: hidden;
 
+    @media screen and (max-width: $screen-laptop) {
+        padding-top: 90px;
+    }
+
     .content__container--center {
         max-width: 800px;
     }
@@ -78,10 +82,13 @@
             position: relative;
             padding: 0 1.5rem 2rem 1.5rem;
             width: 380px;
+
+            @media screen and (max-width: $screen-mobile) {
+                width: 300px;
+            }
         }
         &__img {
             border-radius: 1.8rem;
-            // width: 380px;
         }
         &__content {
             position: absolute;

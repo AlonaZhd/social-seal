@@ -4,13 +4,26 @@
     background-color: var(--color-white);
     padding-top: 177px;
 
+    @media screen and (max-width: $screen-laptop) {
+        padding-top: 112px;
+        padding-bottom: 58px;
+    }
+
     &__container {
         width: 100%;
         gap: 5.2rem;
         position: relative;
 
+        @media screen and (max-width: $screen-laptop) {
+            flex-direction: column;
+        }
+
         .content__container {
             gap: 2rem;
         }
+    }
+
+    &__image {
+        width: 100%;
     }
 }

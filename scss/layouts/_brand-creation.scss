@@ -7,10 +7,24 @@
     margin-bottom: -70px;
     overflow: hidden;
 
+    @media screen and (max-width: $screen-mobile) {
+        padding-top: 80px;
+        padding-bottom: 57px;
+        margin-bottom: 0;
+    }
+
     &__container {
         width: 100%;
         gap: 4.4rem;
         // overflow: hidden;
+
+        @media screen and (max-width: $screen-tablet) {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: $screen-mobile) {
+            gap: 3.6rem;
+        }
     }
 
     .container {
@@ -21,13 +35,22 @@
         max-width: 400px;
         position: relative;
         z-index: 2;
+
+        @media screen and (max-width: $screen-tablet) {
+            max-width: fit-content;
+        }
     }
 
     &__slider {
         gap: 2.4rem;
         left: 480px;
         position: absolute;
-        max-width: 964px;
+        width: 100%;
+        @media screen and (max-width: $screen-tablet) {
+            left: 0;
+            position: relative;
+            max-width: 100%;
+        }
 
         &::before {
             position: absolute;
@@ -50,13 +73,22 @@
         }
 
         .slider__item {
-            width: 379px;
+            max-width: 379px;
+
+            @media screen and (max-width: $screen-tablet) {
+                width: auto;
+                max-width: 328px;
+            }
         }
     }
 
     &__float-img {
         position: absolute;
         animation: rotate 5s infinite;
+
+        @media screen and (max-width: $screen-tablet) {
+            display: none;
+        }
 
         &:nth-child(1) {
             width: 67px;
@@ -69,6 +101,12 @@
             right: 83px;
             bottom: -65px;
             animation-delay: 1s;
+        }
+    }
+
+    .button__primary {
+        @media screen and (max-width: $screen-mobile) {
+            width: 100%;
         }
     }
 }

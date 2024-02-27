@@ -3,6 +3,15 @@
 .counters {
     gap: 3rem;
     display: flex;
+    justify-content: flex-end;
+
+    @media screen and (max-width: $screen-laptop) {
+        justify-content: center;
+    }
+
+    @media screen and (max-width: $screen-mobile) {
+        flex-direction: column;
+    }
 
     &__card {
         flex-direction: column;

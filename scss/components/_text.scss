@@ -23,6 +23,11 @@
         @extend .text;
         font-size: 2.9rem;
         font-weight: 300;
+
+        @media screen and (max-width: $screen-mobile) {
+            font-size: 2rem;
+            line-height: 100%;
+        }
     }
 
     &--small {
