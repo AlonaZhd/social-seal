@@ -2135,8 +2135,6 @@ input[type=radio] {
 }
 .gallery__image {
   border-radius: 1.6rem;
-}
-.gallery__image--large {
   height: 100%;
 }
 
